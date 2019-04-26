@@ -5,6 +5,10 @@
 (community-wiki-url <uri>)
 (community-forum-url <uri>)
 
+(documentation
+ (title <string>)
+ (web-url <uri>))
+
 (mailing-list
  (name)
  (archive-url <uri>)
