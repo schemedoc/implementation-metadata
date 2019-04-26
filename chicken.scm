@@ -37,5 +37,6 @@
 (release
  (date (2018 11 7))
  (version-number "5.0.0")
- (source-archive-url "https://code.call-cc.org/releases/5.0.0/chicken-5.0.0.tar.gz")
- (source-archive-hash sha256 "a8b94bb94c5d6a4348cedd75dc334ac80924bcd9a7a7a3d6af5121e57ef66595"))
+ (source-archive
+  (url "https://code.call-cc.org/releases/5.0.0/chicken-5.0.0.tar.gz")
+  (hash sha256 "a8b94bb94c5d6a4348cedd75dc334ac80924bcd9a7a7a3d6af5121e57ef66595")))

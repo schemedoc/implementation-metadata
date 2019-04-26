@@ -23,6 +23,7 @@
 (release
  (date (<y:nat> <m:nat> <d:nat>))
  (version-number <string>)
- (source-archive-url <uri>)
- (source-archive-sha1 <sha1>)
- (bundled-srfi-implementations <nat...>))
+ (bundled-srfi-implementations <nat...>)
+ (source-archive
+  (url <uri>)
+  (hash <sha1/sha256/...> <hash-value>)))
