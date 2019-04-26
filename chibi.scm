@@ -3,6 +3,10 @@
 (homepage-url "http://synthcode.com/wiki/chibi-scheme")
 (issue-tracker-url "https://github.com/ashinn/chibi-scheme/issues")
 
+(documentation
+ (title "Manual")
+ (web-url "http://synthcode.com/scheme/chibi/"))
+
 (mailing-list
  (name "Google group")
  (archive-url "https://groups.google.com/group/chibi-scheme"))
