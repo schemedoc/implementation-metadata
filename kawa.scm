@@ -2,7 +2,7 @@
 
 (homepage-url "https://www.gnu.org/software/kawa/")
 (issue-tracker-url "https://gitlab.com/kashell/Kawa/issues")
-(issue-tracker-url "http://savannah.gnu.org/bugs/?group=kawa")
+(issue-tracker-url "https://savannah.gnu.org/bugs/?group=kawa")
 
 (documentation
  (title "Reference Documentation")
