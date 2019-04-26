@@ -13,8 +13,8 @@
 
 (version-control
  (web-url "https://github.com/ashinn/chibi-scheme")
- (git-url "git@github.comashinn/chibi-scheme.git")
- (git-url "https://github.com/ashinn/chibi-scheme.git"))
+ (git-url "https://github.com/ashinn/chibi-scheme.git")
+ (git-url "git@github.com:ashinn/chibi-scheme.git"))
 
 (release
  (date (2018 1 25))
