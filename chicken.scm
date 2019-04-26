@@ -14,7 +14,7 @@
 (irc-channel
  (channel "#chicken")
  (network "irc.freenode.net")
- (webchat "http://webchat.freenode.net/?channels=%23chicken"))
+ (webchat "https://webchat.freenode.net/?channels=%23chicken"))
 
 (mailing-list
  (name "users")

@@ -14,7 +14,7 @@
 (irc-channel
  (channel "#guile")
  (network "irc.freenode.net")
- (webchat "http://webchat.freenode.net/?channels=%23guile"))
+ (webchat "https://webchat.freenode.net/?channels=%23guile"))
 
 (mailing-list
  (name "user")
