@@ -11,7 +11,9 @@
 
 (mailing-list
  (name)
+ (list-address <local-part> <domain>)
  (archive-url <uri>)
+ (instructions-url <url>)
  (subscribe-url <uri>))
 
 (version-control
