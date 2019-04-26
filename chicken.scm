@@ -11,6 +11,11 @@
  (title "Manual (version 5)")
  (web-url "https://wiki.call-cc.org/man/5/The%20User%27s%20Manual"))
 
+(irc-channel
+ (channel "#chicken")
+ (network "irc.freenode.net")
+ (webchat "http://webchat.freenode.net/?channels=%23chicken"))
+
 (mailing-list
  (name "users")
  (list-address "chicken-users" "nongnu.org")
