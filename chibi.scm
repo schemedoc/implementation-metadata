@@ -12,14 +12,14 @@
  (archive-url "https://groups.google.com/group/chibi-scheme"))
 
 (version-control
- (web-url "https//github.com/ashinn/chibi-scheme")
+ (web-url "https://github.com/ashinn/chibi-scheme")
  (git-url "git@github.comashinn/chibi-scheme.git")
- (git-url "https//github.com/ashinn/chibi-scheme.git"))
+ (git-url "https://github.com/ashinn/chibi-scheme.git"))
 
 (release
  (date (2018 1 25))
  (version-number "0.8.0")
- (source-archive-url "http//synthcode.com/scheme/chibi/chibi-scheme-0.8.0.tgz")
+ (source-archive-url "http://synthcode.com/scheme/chibi/chibi-scheme-0.8.0.tgz")
  (source-archive-hash sha1 "7ce5f6609e7a84cefaf4f7596de3770b8db4ac00")
  (bundled-srfi-implementations
   1 2 6 8 9 11 14 16 18 23
