@@ -9,6 +9,11 @@
  (title <string>)
  (web-url <uri>))
 
+(irc-channel
+ (channel <#name>)
+ (network <irc.example.net>)
+ (webchat <uri>))
+
 (mailing-list
  (name)
  (list-address <local-part> <domain>)
