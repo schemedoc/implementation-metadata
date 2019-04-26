@@ -11,6 +11,11 @@
  (title "FAQ")
  (web-url "https://www.gnu.org/software/guile/docs/faq/guile-faq.html"))
 
+(irc-channel
+ (channel "#guile")
+ (network "irc.freenode.net")
+ (webchat "http://webchat.freenode.net/?channels=%23guile"))
+
 (mailing-list
  (name "user")
  (list-address "guile-user" "gnu.org")
