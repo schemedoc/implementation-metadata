@@ -7,7 +7,8 @@
 
 (documentation
  (title <string>)
- (web-url <uri>))
+ (web-url <uri>)
+ (pdf-url <uri>))
 
 (irc-channel
  (channel <#name>)
