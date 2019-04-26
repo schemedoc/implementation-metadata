@@ -10,6 +10,8 @@
  (web-url <uri>)
  (pdf-url <uri>))
 
+(web-chat-url <uri>)
+
 (irc-channel
  (channel <#name>)
  (network <irc.example.net>)
