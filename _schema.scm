@@ -19,7 +19,7 @@
  (git-url <uri>))
 
 (release
- (date <yyyy-mm-dd>)
+ (date (y m d))
  (version-number "0.8.0")
  (source-archive-url <uri>)
  (source-archive-sha1 <sha1>)
