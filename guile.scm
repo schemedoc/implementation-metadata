@@ -40,4 +40,9 @@
  (source-archive
   (url "https://ftp.gnu.org/gnu/guile/guile-2.2.4.tar.lz"))
  (source-archive
-  (url "https://ftp.gnu.org/gnu/guile/guile-2.2.4.tar.xz")))
+  (url "https://ftp.gnu.org/gnu/guile/guile-2.2.4.tar.xz"))
+ (bundled-srfi-implementations
+  1 2 4 6 8 9 10 11 13 14
+  16 17 18 19 26 27 28 31 34 35
+  37 38 39 41 42 43 45 60 64 67
+  69 71 88 98 111))
