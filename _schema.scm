@@ -20,7 +20,7 @@
 
 (release
  (date (y m d))
- (version-number "0.8.0")
+ (version-number <string>)
  (source-archive-url <uri>)
  (source-archive-sha1 <sha1>)
  (bundled-srfi-implementations <nat...>))
