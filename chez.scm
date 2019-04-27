@@ -7,7 +7,7 @@
 
 (documentation
  (title "User's Guide")
- (web-url "http://cisco.github.io/ChezScheme/csug9.5/csug.html"))
+ (web-url "https://cisco.github.io/ChezScheme/csug9.5/csug.html"))
 
 (irc-channel
  (channel "#chez")
