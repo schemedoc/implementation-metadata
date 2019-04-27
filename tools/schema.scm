@@ -26,7 +26,8 @@
 
 (version-control
  (web-url <uri>)
- (git-url <uri>))
+ (git-url <uri>)
+ (mercurial-url <uri>))
 
 (release
  (date (<y:nat> <m:nat> <d:nat>))
