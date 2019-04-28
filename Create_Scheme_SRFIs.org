@@ -1,0 +1,665 @@
+* Purpose
+
+Screen-scrap the pages listing supported SRFIs for various Scheme implementations and generate either an HTML-page or a
+Github-flavored Markdown formatted table listing which implementation supports which SRFIs.
+
+* How
+
+** Status
+
+This piece of software can currently generate a quite plain (ugly) HTML page listing the SRFIs supported by the
+following Scheme implementations (simply based on my personal interest):
+
+- Kawa, Guile, Gerbil, Gauche, Gambit, Bigloo
+
+Next on the list for being supported are:
+
+- Racket: https://docs.racket-lang.org/srfi/index.html
+
+- Chez: no SRFI info found; only external pages
+
+** Overview
+
+1. A Makefile is driving the whole conversion process. The required URL values are also defined by that Makefile, so
+   configuration basically means editing the Makefile - not too bad assuming that those URLs won't change very often.
+
+2. That "conversion process" mainly means:
+
+   1. Loading general info from the SRFI overview page. Fetching the HTML content of a page is done using Gauche's
+      =http-get= procedure. After the download each HTML is pre-processed and converted to XML using the =tidy= command
+      line program, which is called as an external program, using Gauche's =sys-fork-and-exec=.
+
+      So this conversion will *not* run if =tidy= is not installed.
+
+      Parsing the XML page is done using SXML and SXPath, using Gauche's library procedures =*-sxpath= as provided by
+      module =sxml.sxpath=.
+
+      This works for all Schemes except Gerbil. While Gerbil's docu page listing the supported SRFIs is simply the
+      best-looking page, it cannot be pre-processed by =tidy= and I just didn't want to do even more HTML-parsing on the
+      Scheme-side. So I shamefully grep through Gerbil's HTML page using a regex to pick the list of SRFIs - sue me!
+
+   2. Loading a list of supported SRFIs by parsing the respective HTML page for each Scheme's SRFI implementation. Each
+      HTML page is converted to XML using the same steps as just described for the SRFI overview page.
+
+      Parsing the XML pages of all Schemes and transforming them the SXML is done using Gauche's library
+      =ssax:xml->sxml= procedure as provided by module =sxml.ssax=.
+
+      *Note:* When trying to parse the HTML served by https://srfi.schemers.org/srfi-n/ using =ssax:xml->sxml=, I was
+      getting =wrong character #\> space after PubidLiteral=. So I switched to the cheap method, parsing the HTML
+      linewise and filtering for the title. Not too smart and not too reliable, but works well so far. Alternative would
+      be to use =curl= and =tidy= to fetch and pre-process the HTML as done above when parsing the relevant SRFI-pages.
+
+   3. Generating an HTML page collecting the information just gathered.
+
+      Generating the HTML page is done using Gauche's library =srl:sxml->html= procedure as provided by module
+      =sxml.serializer=.
+
+      *Note:* Gauche supports two different implementations of SXML: =(use sxml.serializer)= which provides e.g.
+      =srl:sxml->html= and =(use sxml.tools)= which provides =sxml:sxml->html=. The former one seems to be more like an
+      higher level API, so I was using that one without much further investigation.
+
+** Interesting links
+
+- List of Scheme implementations:
+  http://community.schemewiki.org/?scheme-faq-standards#implementations
+
+- [[http://www.html-tidy.org/][Tidy Homepage]]
+
+- Various interesting links about how to use , =sxml=, =ssax= and =sxpath= with Scheme:
+
+  - http://okmij.org/ftp/Scheme/xml.html#SXSLT
+
+  - https://practical-scheme.net/gauche/man/gauche-refe/Functional-XML-parser.html,
+    https://practical-scheme.net/gauche/man/gauche-refe/SXML-Query-Language.html#SXPath-query-language,
+    https://practical-scheme.net/gauche/man/gauche-refe/Serializing-XML-and-HTML-from-SXML.html#index-srl_003asxml_002d_003ehtml
+
+* Implementation
+
+** Makefile
+
+#+BEGIN_SRC makefile :tangle tangled/gather-scheme-srfis/Makefile
+# ============================================================================
+# File:                Makefile
+# Purpose:             Makefile for gather-scheme-srfis.org
+# Note:                DO NOT EDIT. GENERATED FROM gather-scheme-srfis.org
+# ============================================================================
+
+THIS_MAKEFILE   = $(lastword $(MAKEFILE_LIST))
+
+MKDIRS          = mkdir -p
+RMDIRS          = rm -rf
+
+TMP             = /tmp
+TMP_DIR         = $(TMP)/gather-scheme-srfis
+OUT_DIR         = $(TMP_DIR)/out
+
+.PHONY : all clean run open-page FORCE
+
+all : run
+
+clean :
+	$(RMDIRS) $(TMP_DIR)
+
+run : $(OUT_DIR)/srfi.html $(OUT_DIR)/srfi.md
+
+open-page :
+	firefox file:///tmp/gather-scheme-srfis/out/srfi.html
+
+define build_target_template =
+$(OUT_DIR)/srfi.$1 : tangled/gather-scheme-srfis/getter-writer.scm $(THIS_MAKEFILE) | $(TMP_DIR) $(OUT_DIR)
+	gosh $$< -o $$@ -O $1                                                                                                                                                           \
+		-t $$(TMP)/gather-scheme-srfis                                                                                                                                    \
+		-s https://srfi.schemers.org                                                                                                                                     \
+		Bigloo https://www-sop.inria.fr/indes/fp/Bigloo/bigloo.html    https://www-sop.inria.fr/indes/fp/Bigloo/bigloo-1.html                                            \
+		Gambit http://dynamo.iro.umontreal.ca/wiki/index.php/Main_Page http://dynamo.iro.umontreal.ca/wiki/index.php/SRFI:s                                              \
+		Gauche https://practical-scheme.net/gauche/index.html	       http://practical-scheme.net/gauche/man/gauche-refe/Standard-conformance.html#Standard-conformance \
+		Gerbil https://cons.io/                                        https://cons.io/guide/srfi.html                                                                   \
+		Guile  https://www.gnu.org/software/guile/		       https://www.gnu.org/software/guile/manual/html_node/SRFI-Support.html                             \
+		Kawa   https://www.gnu.org/software/kawa/index.html	       https://www.gnu.org/software/kawa/Implemented-SRFIs.html
+endef
+
+$(eval $(call build_target_template,html))
+
+$(eval $(call build_target_template,md))
+
+FORCE :
+
+$(TMP_DIR) $(OUT_DIR) :
+	$(MKDIRS) $@
+#+END_SRC
+
+** Scheme implementation
+
+#+BEGIN_SRC scheme :tangle tangled/gather-scheme-srfis/getter-writer.scm
+;; ============================================================================
+;; File:                getter-writer.scm
+;; Purpose:             Scheme sources to parse input and generate output
+;; Note:                DO NOT EDIT. GENERATED FROM gather-scheme-srfis.org
+;; ============================================================================
+
+(use file.util)                         ; build-path
+(use gauche.parameter)                  ; make-parameter
+(use gauche.parseopt)                   ; let-args
+(use rfc.http)                          ; http-get
+(use rfc.uri)                           ; uri-ref
+(use srfi-13)                           ; string procedures, e.g. string-prefix-ci?
+(use sxml.serializer)                   ; srl:sxml->html
+(use sxml.ssax)                         ; ssax:xml->sxml
+(use sxml.sxpath)                       ; [*-]sxpath
+(use sxml.tree-trans)                   ; pre-post-order, ...
+(use util.match)                        ; various match helpers
+
+;; --- helpers
+
+(define (flatmap proc seq)
+  (fold-right append '() (map proc seq)))
+
+(define (url-strip-srfi-nr str)
+  ;; Return a single number (as number, not as string) from an URL given as string STR holding the link to an individual
+  ;; SRFI documentation page, or raise an error if string cannot be parsed as an URL of the expected format.
+  ;; (url-strip-srfi-nr "http://srfi.schemers.org/srfi-123/")
+  (let ([g1 (rxmatch->string #/http[s]?:\/\/.*\/srfi-(\d+)\// str 1)])
+    (if g1
+        (string->number g1)
+        (error "Cannot parse SRFI index" str))))
+
+(define (rx-match-srfi srfi-rx str)
+  ;; Return a single number (as number, not as string) from the first group in given regex SRFI-RX as applied to string
+  ;; STR, or #f if string doesn't match regex.
+  (let ([gg (rxmatch-substrings (srfi-rx str) 1)])
+    (and gg (not (null? gg)) (string->number (car gg)))))
+
+(define (force-rx-match-srfi srfi-rx str)
+  ;; Return a single number (as number, not as string) from the first group in given regex SRFI-RX as applied to string
+  ;; STR, or raise an error if string doesn't match regex.
+  (let ([nr (rx-match-srfi srfi-rx str)])
+    (or nr (error "Cannot parse SRFI index" str))))
+
+(define (substring-rx-match-srfi srfi-rx str start-str end-str)
+  ;; Loop over given string STR and collect for each substring candidate enclosed between strings START-STR and END-STR
+  ;; apply `rx-match-srfi'. Return a list of all matching numbers in string.
+  ;; This is required to avoid "ERROR: Ran out of stack during matching regexp" when applying the regex to the long
+  ;; lines in the Gerbil HTML.
+
+  (define (match-single str)
+    (or (and-let* ([start (string-contains str start-str)]
+                   [str   (substring str (+ start (string-length start-str)) -1)]
+                   [end   (string-contains str end-str)]
+                   [m-str (substring str 0 end)])
+          (values str (rx-match-srfi srfi-rx m-str)))
+        (values #f #f)))
+
+  (let loop ([str str]
+             [nrs '()])
+    (if str
+        (receive (next-str nr)
+            (match-single str)
+          (loop next-str (if nr (cons nr nrs) nrs)))
+        (reverse nrs))))
+
+;; --- fetching and parsing HTML
+
+(define (get-to-local host query-path html-dir :key (secure #t) (html-basename #f))
+  ;; Download the HTML page defined by the given arguments to a local file.
+
+  (define (get-to-local-aux html-pathname)
+    (call-with-output-file html-pathname
+      (lambda (outfile)
+        (receive (status headers body)
+            (http-get host query-path :secure secure :sink outfile :flusher (lambda _ #t))
+          (if (and (equal? status "200")
+                   (file-is-readable? html-pathname))
+              (begin
+                (print-verbose "Download complete: " html-pathname)
+                html-pathname)
+              (error "Could not get and store locally" host query-path html-pathname status))))))
+
+  (unless (file-is-directory? html-dir)
+    (make-directory* html-dir))
+  (let* ([html-basename (or html-basename
+                            (receive (dir basename-no-ext ext)
+                                (decompose-path query-path)
+                              (format "~a.~a" basename-no-ext ext)))]
+         [html-pathname (build-path html-dir html-basename)])
+    (if (or (+force-get+)
+            (not (file-is-readable? html-pathname)))
+        (get-to-local-aux html-pathname)
+        html-pathname)))
+
+(define (get-tidied-sxml html-pathname xml-dir)
+  ;; Convert the local HTML file defined by given string HTML-PATHNAME to sxml, assuming an installed version of tidy in
+  ;; the executable path. The result file is stored below folder XML-DIR given as a string.
+
+  (define (run-tidy html-pathname xml-dir)
+
+    (define (save-xml-pathname xml-pathname err-pathname exit-status)
+      (if (sys-wait-exited? exit-status)
+          (let ([exit-code (sys-wait-exit-status exit-status)])
+            (if (= exit-code 2)               ; Tidy exit codes: 2 -> errors
+                (errorf "Got error, check error log ~a" err-pathname)
+                (if (and (file-is-readable? xml-pathname) (positive? (file-size xml-pathname)))
+                    (begin
+                      (when (= exit-code 1)   ; 1 -> warnings
+                        (format (current-error-port) "Got warnings, check ~a~%" err-pathname))
+                      xml-pathname)
+                    (errorf "Result file ~a empty, check error log ~a" xml-pathname err-pathname))))
+          (error "Unexpected exit status" exit-status)))
+
+    (let* ([xml-basename (receive (dir basename-no-ext ext)
+                             (decompose-path html-pathname)
+                           (format "~a.~a" basename-no-ext "xml"))]
+           [xml-pathname (build-path xml-dir xml-basename)]
+           [err-pathname (path-swap-extension xml-pathname "err")]
+           [out (open-output-file xml-pathname)]
+           [err (open-output-file err-pathname)])
+      (let ((pid (sys-fork-and-exec "tidy"
+                                    `("tidy" "--numeric-entities" "yes" "-asxml" ,html-pathname)
+                                    :iomap `((1 . ,out) (2 . ,err)))))
+        (receive (exit-pid exit-status)
+            (sys-waitpid pid)           ; suspends until child process is terminated
+          (close-output-port out)
+          (close-output-port err)
+          (save-xml-pathname xml-pathname err-pathname exit-status)))))
+
+  (unless (file-is-directory? xml-dir)
+    (make-directory* xml-dir))
+  (let ([xml-pathname (run-tidy html-pathname xml-dir)])
+    (call-with-input-file xml-pathname
+      (lambda (inport)
+        (ssax:xml->sxml inport '())))))
+
+(define (get-gerbil-regexed-srfis html-pathname)
+  ;; Return the sorted list of SRFI numbers greped from the local HTML file defined by string HTML-PATHNAME.
+  ;; <td><a href="https://srfi.schemers.org/srfi-14/srfi-14.html" target="_blank" rel="noopener noreferrer">
+  (let ([srfi-rx #/"http[s]?:\/\/.*\/srfi-(\d+)\/srfi-(?:\1).html"\s+target="_blank"\s+/])
+    (call-with-input-file html-pathname
+      (lambda (inport)
+        (let loop ([line (read-line inport)]
+                   [srfi-nrs '()])
+          (if (eof-object? line)
+              (sort srfi-nrs <)
+              (let ([line-nrs (substring-rx-match-srfi srfi-rx line "<td><a href=" "rel=\"noopener noreferrer\">")])
+                (if (null? line-nrs)
+                    (loop (read-line inport)
+                          srfi-nrs)
+                    (loop (read-line inport)
+                          (append line-nrs srfi-nrs))))))))))
+
+;; --- Scheme SRFI parsing logic
+
+(define (default-binding tag . elems)
+  (flatmap identity (filter identity elems)))
+
+(define (top-binding tag children)
+  children)
+
+(define (@-filter-url elems)
+  (map cadr (filter (match-lambda [(tag value) (eq? tag 'href)]) elems)))
+
+(define (gauche-strip-srfi-nr str)
+  ;; (gauche-strip-srfi-nr "SRFI-123, Feature-based conditional expansion construct.")
+  ;; (gauche-strip-srfi-nr "srfi-4")
+  (let ([g1 (rxmatch->string #/SRFI-(\d+)[\,.*]?/i str 1)])
+    (if g1
+        (string->number g1)
+        (error "Cannot parse SRFI index" str))))
+
+(define (guile-strip-srfi-nr str)
+  ;; (guile-strip-srfi-nr "SRFI_002d123.html#SRFI_002d123")
+  (force-rx-match-srfi #/SRFI_002d(\d+)\.html#SRFI_002d(?:\1)/ str))
+
+(define (kawa-try-split-srfi-nr str)
+  ;; (kawa-try-split-srfi-nr "http://srfi.schemers.org/srfi-123/srfi-123.html")
+  (rx-match-srfi #/http[s]?:\/\/.*\/srfi-(\d+)\/srfi-(?:\1).html/ str))
+
+(define (run-bigloo parsed-sxml)
+  (map url-strip-srfi-nr
+       (let ([parse-state 'before-srfis])
+         (pre-post-order
+          parsed-sxml
+          `((@
+             ,*preorder*
+             . ,(lambda (tag . elems)
+                  (let ([urls (@-filter-url elems)])
+                    (case parse-state
+                      ((before-srfis)
+                       (when (member "http://srfi.schemers.org" urls)
+                         (set! parse-state 'reading-srfis))
+                       #f)
+                      ((reading-srfis)
+                       (@-filter-url elems))
+                      (else #f)))))
+            (*text*    . ,(lambda (tag text)
+                            (case parse-state
+                              ((reading-srfis)
+                               (when (string-prefix-ci? "Some SRFIs are not builtin" text)
+                                 (set! parse-state 'done-srfis))))
+                            #f))
+            (*TOP*     . ,top-binding)
+            (*default* . ,default-binding))))))
+
+(define (run-gambit parsed-sxml)
+  (map url-strip-srfi-nr
+       (let ([parse-state 'before-srfis])
+         (pre-post-order
+          parsed-sxml
+          `((@
+             ,*preorder*
+             . ,(lambda (tag . elems)
+                  (case parse-state
+                    ((reading-srfis)
+                     (let ([urls (@-filter-url elems)])
+                       (if (member "/wiki/index.php/Black_Hole" urls)
+                           (begin
+                             (set! parse-state 'done-srfis)
+                             #f)
+                           urls)))
+                    (else #f))))
+            (*text*
+             . ,(lambda (tag text)
+                  (case parse-state
+                    ((before-srfis)
+                     (when (string-prefix-ci? "Gambit natively implements the following SRFIs" text)
+                       (set! parse-state 'reading-srfis))))
+                  #f))
+            (*TOP* . ,top-binding)
+            (*default* . ,default-binding))))))
+
+(define (run-gauche parsed-sxml)
+  (map gauche-strip-srfi-nr
+       (let ([parse-state 'before-srfis])
+         (pre-post-order
+          parsed-sxml
+          `((@
+             ,*preorder*
+             . ,(lambda (tag . elems)
+                  (case parse-state
+                    ((reading-srfis)
+                     (let ([urls (@-filter-url elems)])
+                       (when (member "Multibyte-strings.html#Multibyte-strings" urls)
+                         (set! parse-state 'done-srfis)))))
+                  #f))
+            (*text*
+             . ,(lambda (tag text)
+                  (case parse-state
+                    ((before-srfis)
+                     (when (string-prefix-ci? "Gauche also supports the following SRFIs" text)
+                       (set! parse-state 'reading-srfis))
+                     #f)
+                    ((reading-srfis)
+                     (if (string-prefix-ci? "SRFI-" text)
+                         (list text)
+                         #f))
+                    (else #f))))
+            (*TOP*     . ,top-binding)
+            (*default* . ,default-binding))))))
+
+(define (run-gerbil html-pathname)
+  (get-gerbil-regexed-srfis html-pathname))
+
+(define (run-guile parsed-sxml)
+  (map guile-strip-srfi-nr
+       (let ([parse-state 'before-srfis])
+         (pre-post-order
+          parsed-sxml
+          `((@
+             ,*preorder*
+             . ,(lambda (tag . elems)
+                  (case parse-state
+                    ((reading-srfis)
+                     (let ([urls (@-filter-url elems)])
+                       (cond
+                        ((member "R6RS-Support.html#R6RS-Support" urls)
+                         (set! parse-state 'done-srfis)
+                         #f)
+                        (else urls))))
+                    (else #f))))
+            (*text*
+             . ,(lambda (tag text)
+                  (case parse-state
+                    ((before-srfis)
+                     (when (string-prefix-ci? "What to know about Guile" text)
+                       (set! parse-state 'reading-srfis))))
+                  #f))
+            (*TOP*     . ,top-binding)
+            (*default* . ,default-binding))))))
+
+(define (run-kawa parsed-sxml)
+  (filter identity                      ; (url text url text) --> filter for parsed URLs only
+          (map kawa-try-split-srfi-nr
+               (let ([parse-state 'before-srfis])
+                 (pre-post-order
+                  parsed-sxml
+                  `((@
+                     ,*preorder*
+                     . ,(lambda (tag . elems)
+                          (let ([urls (@-filter-url elems)])
+                            (case parse-state
+                              ((before-srfis)
+                               (if (member "http://srfi.schemers.org/" urls)
+                                   (begin (set! parse-state 'reading-srfis)
+                                          #f)
+                                   #f))
+                              ((reading-srfis)
+                               (if (member "Features.html" urls)
+                                   (begin (set! parse-state 'done-srfis)
+                                          #f)
+                                   urls))
+                              (else #f)))))
+                    (*text*    . ,(lambda args #f))
+                    (*TOP*     . ,top-binding)
+                    (*default* . ,default-binding)))))))
+
+(define (generate-html tmpdir implementations)
+  ;; Generate the resulting HTML file below the folder given by string TMPDIR, using the information collected into list
+  ;; IMPLEMENTATIONS, holding the relevant info for all supported Schemes.
+
+  (define (make-link href :optional (text #f))
+    (if text
+        `(a (@ (href ,href)) ,text)
+        `(a (@ (href ,href)) ,href)))
+
+  (define (get-srfi-title srfi-nr)
+    (let* ([parsed-sxml (get-tidied-sxml
+                         (get-to-local "srfi.schemers.org"
+                                       (format #f "/srfi-~d/" srfi-nr)
+                                       (build-path tmpdir "srfihtml/")
+                                       :secure #t
+                                       :html-basename (format #f "srfi~d.html" srfi-nr))
+                         (build-path tmpdir "srfixml/" (format #f "srfi-~d" srfi-nr)))]
+           [match ((car-sxpath '(// http://www.w3.org/1999/xhtml:title)) parsed-sxml)])
+      (cadr match)))
+
+  (define (header-names-row)
+    (map (lambda (cell) `(th ,cell)) (cons "srfi-#" (map car implementations))))
+
+  (define (header-urls-row)
+    (map (lambda (cell) `(th ,cell)) (cons ""       (map (compose make-link cadr) implementations))))
+
+  (define (data-line line)
+    (let* ([srfi-nr (car (filter identity line))] ; there must be at least one number in line, so that will work
+           [srfi-title (get-srfi-title srfi-nr)])
+      (map
+       (lambda (cell) `(td ,cell))
+       (cons srfi-title
+             (map
+              (lambda (i)
+                (if i
+                    (make-link (format #f "https://srfi.schemers.org/srfi-~d" i)
+                               (format #f "SRFI-~d" i))
+                    "-"))
+              line)))))
+
+  (define (filtered-srfis)
+    (filter
+     (lambda (line) (any identity line))
+     (map
+      (lambda (srfi-nr)
+        (map
+         (lambda (implementation)
+           (if (member srfi-nr (caddr implementation))
+               srfi-nr
+               #f))
+         implementations))
+      (iota (+nb-srfis+)))))
+
+  (srl:sxml->html `(html
+                    (body
+                     (table
+                      (tr ,@(header-names-row))
+                      (tr ,@(header-urls-row))
+                      ,@(map
+                         (lambda (line) `(tr ,@(data-line line)))
+                         (filtered-srfis)))))))
+
+(define (generate-md tmpdir implementations)
+  ;; Generate the resulting file as Github-flavored Markdown below the folder given by string TMPDIR, using the
+  ;; information collected into list IMPLEMENTATIONS, holding the relevant info for all supported Schemes. Note that
+  ;; this will not generate human-readable markdown, but markdown that's just good enough to define a table.
+
+  (define (make-link href :optional (text #f))
+    (if text
+        (format #f "[~a](~a)" text href)
+        (format #f "<~a>" href)))
+
+  (define (get-srfi-title srfi-nr)
+    (let* ([parsed-sxml (get-tidied-sxml
+                         (get-to-local "srfi.schemers.org"
+                                       (format #f "/srfi-~d/" srfi-nr)
+                                       (build-path tmpdir "srfihtml/")
+                                       :secure #t
+                                       :html-basename (format #f "srfi~d.html" srfi-nr))
+                         (build-path tmpdir "srfixml/" (format #f "srfi-~d" srfi-nr)))]
+           [match ((car-sxpath '(// http://www.w3.org/1999/xhtml:title)) parsed-sxml)])
+      (cadr match)))
+
+  (define (header-names-row)
+    (map (lambda (cell) (format #f "~a" cell)) (cons "srfi-#" (map car implementations))))
+
+  (define (header-urls-row)
+    (map (lambda (cell) (format #f "~a" cell)) (cons ""       (map (compose make-link cadr) implementations))))
+
+  (define (data-line line)
+    (let* ([srfi-nr (car (filter identity line))] ; there must be at least one number in line, so that will work
+           [srfi-title (get-srfi-title srfi-nr)])
+      (map
+       (lambda (cell) (format #f "~a" cell))
+       (cons srfi-title
+             (map
+              (lambda (i)
+                (if i
+                    (make-link (format #f "https://srfi.schemers.org/srfi-~d" i)
+                               (format #f "SRFI-~d" i))
+                    "-"))
+              line)))))
+
+  (define (filtered-srfis)
+    (filter
+     (lambda (line) (any identity line))
+     (map
+      (lambda (srfi-nr)
+        (map
+         (lambda (implementation)
+           (if (member srfi-nr (caddr implementation))
+               srfi-nr
+               #f))
+         implementations))
+      (iota (+nb-srfis+)))))
+
+  (define (table-line cells)
+    (string-append " | " (string-join cells " | ") " |"))
+
+  (string-append
+   (string-join
+    `(,(table-line (header-names-row))
+      ;; table formatting will only work for *single* header line:
+      ,(table-line (map (lambda (_) "---") (header-urls-row)))
+      ,(table-line (header-urls-row))
+      ,@(map
+         (lambda (line) (table-line (data-line line)))
+         (filtered-srfis)))
+    "\n")
+   "\n"))
+
+;; --- main and program options
+
+(define +force-get+ (make-parameter #f))
+(define +nb-srfis+  (make-parameter 166))  ; 166, also works w/ e.g. 200
+(define +srfi-url+  (make-parameter "http://srfi.schemers.org/"))
+
+(define +verbose+ (make-parameter #f))
+(define (print-verbose . x)
+  (when (+verbose+) (apply print x)))
+
+(define (main args)
+
+  (define (implementation->srfis implementation-name url-server request-uri url-secure? tmpdir)
+
+    (define (get-html-pathname)
+      (get-to-local url-server
+                    request-uri
+                    (build-path tmpdir "srfihtml/")
+                    :secure url-secure?
+                    :html-basename (string-append implementation-name ".html")))
+
+    (define (get-implementation-sxml)
+      (get-tidied-sxml (get-html-pathname) (build-path tmpdir "srfixml/")))
+
+    (cond
+     ((string-ci=? implementation-name "bigloo")
+      (run-bigloo (get-implementation-sxml)))
+     ((string-ci=? implementation-name "gambit")
+      (run-gambit (get-implementation-sxml)))
+     ((string-ci=? implementation-name "gauche")
+      (run-gauche (get-implementation-sxml)))
+     ((string-ci=? implementation-name "gerbil")
+      (run-gerbil (get-html-pathname)))
+     ((string-ci=? implementation-name "guile")
+      (run-guile (get-implementation-sxml)))
+     ((string-ci=? implementation-name "kawa")
+      (run-kawa (get-implementation-sxml)))
+     (else
+      (error "Don't know how to get" implementation-name))))
+
+  (let-args (cdr args)
+      ((#f          "q|quiet"      => (cut +verbose+ #f))
+       (#f          "v|verbose"    => (cut +verbose+ #t))
+       (#f          "f|forceget"   => (cut +force-get+ #t))
+       (#f          "s|srfiroot=s" => (cut +srfi-url+ <>))
+       (#f          "n|nbsrfis=i"  => (cut +nb-srfis+ <>))
+       (outfile     "o|outfile=s"  #f)
+       (outtype     "O|outtype=s"  "html")
+       (tmpdir      "t|tmpdir=s"   "/tmp/gather-scheme-srfis")
+       . restargs)
+    (print-verbose (if (+force-get+) "Forcing download" "Might skip download")
+                   " from " (+srfi-url+) #\newline
+                   "Number of SRFIs: " (+nb-srfis+) #\newline
+                   "temporary folder: " tmpdir #\newline
+                   "Writing to: " (or outfile "(stdout)")
+                   ", result format is: " outtype)
+    (let loop ([restargs restargs]
+               [implementations '()])
+      (if (null? restargs)
+          (begin
+            (print-verbose "Processing: " (string-join (map car implementations) " "))
+            (let ((output (if (string= outtype "md")
+                              (generate-md tmpdir (reverse implementations))
+                              (generate-html tmpdir (reverse implementations)))))
+              (if outfile
+                  (begin
+                    (call-with-output-file outfile
+                      (lambda (outport) (display output outport)))
+                    (print "Result written to: " outfile))
+                  (display output)))
+            0)
+          (let* ([implementation-name (car restargs)]
+                 [scheme-url (cadr restargs)]
+                 [srfi-url (caddr restargs)]
+                 [url-server (uri-ref srfi-url 'host+port)]
+                 [request-uri (uri-ref srfi-url 'path+query)]
+                 [url-secure? (string=? (uri-ref srfi-url 'scheme) "https")]
+                 [srfi-list (implementation->srfis implementation-name url-server request-uri url-secure? tmpdir)])
+            ;; this will fail on bad command line, but the command line is ours...
+            (loop (cdddr restargs)
+                  (cons (list implementation-name scheme-url srfi-list) implementations)))))))
+#+END_SRC
