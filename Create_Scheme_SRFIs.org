@@ -14,7 +14,8 @@ following Scheme implementations (simply based on my personal interest):
 
 Next on the list for being supported are:
 
-- Racket: https://docs.racket-lang.org/srfi/index.html
+- Racket: https://docs.racket-lang.org/srfi/index.html; Racket support does currently not work as there is an error with
+  Gauche's =http-get= when reading Racket's SRFI page. Details can be found below.
 
 - Chez: no SRFI info found; only external pages
 
@@ -107,14 +108,14 @@ open-page :
 
 define build_target_template =
 $(OUT_DIR)/srfi.$1 : tangled/gather-scheme-srfis/getter-writer.scm $(THIS_MAKEFILE) | $(TMP_DIR) $(OUT_DIR)
-	gosh $$< -o $$@ -O $1                                                                                                                                                           \
-		-t $$(TMP)/gather-scheme-srfis                                                                                                                                    \
-		-s https://srfi.schemers.org                                                                                                                                     \
-		Bigloo https://www-sop.inria.fr/indes/fp/Bigloo/bigloo.html    https://www-sop.inria.fr/indes/fp/Bigloo/bigloo-1.html                                            \
-		Gambit http://dynamo.iro.umontreal.ca/wiki/index.php/Main_Page http://dynamo.iro.umontreal.ca/wiki/index.php/SRFI:s                                              \
+	gosh $$< -o $$@ -O $1																				\
+		-t $$(TMP)/gather-scheme-srfis																	  \
+		-s https://srfi.schemers.org																	 \
+		Bigloo https://www-sop.inria.fr/indes/fp/Bigloo/bigloo.html    https://www-sop.inria.fr/indes/fp/Bigloo/bigloo-1.html						 \
+		Gambit http://dynamo.iro.umontreal.ca/wiki/index.php/Main_Page http://dynamo.iro.umontreal.ca/wiki/index.php/SRFI:s						 \
 		Gauche https://practical-scheme.net/gauche/index.html	       http://practical-scheme.net/gauche/man/gauche-refe/Standard-conformance.html#Standard-conformance \
-		Gerbil https://cons.io/                                        https://cons.io/guide/srfi.html                                                                   \
-		Guile  https://www.gnu.org/software/guile/		       https://www.gnu.org/software/guile/manual/html_node/SRFI-Support.html                             \
+		Gerbil https://cons.io/					       https://cons.io/guide/srfi.html									 \
+		Guile  https://www.gnu.org/software/guile/		       https://www.gnu.org/software/guile/manual/html_node/SRFI-Support.html				 \
 		Kawa   https://www.gnu.org/software/kawa/index.html	       https://www.gnu.org/software/kawa/Implemented-SRFIs.html
 endef
 
@@ -618,6 +619,8 @@ $(TMP_DIR) $(OUT_DIR) :
       (run-guile (get-implementation-sxml)))
      ((string-ci=? implementation-name "kawa")
       (run-kawa (get-implementation-sxml)))
+     ((string-ci=? implementation-name "racket")
+      (run-racket (get-implementation-sxml)))
      (else
       (error "Don't know how to get" implementation-name))))
 
@@ -663,3 +666,27 @@ $(TMP_DIR) $(OUT_DIR) :
             (loop (cdddr restargs)
                   (cons (list implementation-name scheme-url srfi-list) implementations)))))))
 #+END_SRC
+
+*Note:* Support for Racket does currently not work. I'm getting an error when trying to run =http-get= on the relevant
+Racket page (see Makefile). This can be reproduced with the snippet below - the first fetch works, the second doesn't.
+
+#+begin_example scheme
+(use rfc.http)                          ; http-get
+(use rfc.uri)                           ; uri-ref
+
+(http-get (uri-ref "https://www.gnu.org/software/kawa/Implemented-SRFIs.html" 'host+port)
+                  (uri-ref "https://www.gnu.org/software/kawa/Implemented-SRFIs.html" 'path+query)
+                  :secure #t) ; works just fine
+(http-get (uri-ref "https://docs.racket-lang.org/srfi/index.html" 'host+port)
+                  (uri-ref "https://docs.racket-lang.org/srfi/index.html" 'path+query)
+                  :secure #t) ; ERROR: TLS handshake failed: -40
+#+end_example
+
+There was recently a commit in the Gauche repo which brought in an updated version of the TSL library, so it makes sense
+to work whether that solves this issue. Once that works, the relevant line of the Makefile is:
+
+#+begin_example Makefile
+		Racket https://racket-lang.org/                                https://docs.racket-lang.org/srfi/index.html
+#+end_example
+
+Otherwise probably the simplest workaround would be a download with =curl= or =wget= and proceed from there.
