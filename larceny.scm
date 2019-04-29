@@ -5,7 +5,7 @@
 
 (documentation
  (title "User's Manual")
- (web-url "http://larcenists.org/Documentation/Documentation1.3/index.html"))
+ (web-url "http://larcenists.org/Documentation/Documentation1.3/user-manual-alt.html"))
 
 (mailing-list
  (name "users")
