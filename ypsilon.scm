@@ -17,4 +17,4 @@
   (url "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ypsilon/ypsilon-0.9.6.update3.tar.gz"))
  (bundled-srfi-implementations
   1 6 8 9 13 14 19 26 27
-  28 38 39 41 42 98))
+  28 38 39 41 42 48 98))
