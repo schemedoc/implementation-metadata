@@ -41,6 +41,10 @@
   (url "https://ftp.gnu.org/gnu/guile/guile-2.2.4.tar.lz"))
  (source-archive
   (url "https://ftp.gnu.org/gnu/guile/guile-2.2.4.tar.xz"))
+ (documentation
+  (title "Reference Manual")
+  (files "doc" ".texi" texinfo)
+  (top-file "doc/ref/guile.texi"))
  (bundled-srfi-implementations
   1 2 4 6 8 9 10 11 13 14
   16 17 18 19 26 27 28 31 34 35
