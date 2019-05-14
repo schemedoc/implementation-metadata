@@ -12,6 +12,10 @@
  (list-address "scheme-48" "s48.org")
  (instructions-url "http://www.s48.org/mailing-list.html"))
 
+(package
+ (manager homebrew)
+ (name "scheme48"))
+
 (version-control
  (web-url "http://www.s48.org/cgi-bin/hgwebdir.cgi/s48")
  (mercurial-url "http://www.s48.org/cgi-bin/hgwebdir.cgi/s48"))

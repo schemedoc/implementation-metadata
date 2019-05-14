@@ -14,6 +14,20 @@
  (archive-url "https://sourceforge.net/p/gauche/mailman/gauche-devel/")
  (instructions-url "https://sourceforge.net/projects/gauche/lists/gauche-devel"))
 
+(package
+ (manager freebsd-ports)
+ (directory "lang")
+ (name "gauche"))
+
+(package
+ (manager homebrew)
+ (name "gauche"))
+
+(package
+ (manager pkgsrc)
+ (directory "lang")
+ (name "gauche"))
+
 (version-control
  (web-url "https://github.com/shirok/Gauche")
  (git-url "https://github.com/shirok/Gauche.git")

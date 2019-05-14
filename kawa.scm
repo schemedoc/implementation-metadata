@@ -18,6 +18,10 @@
  (archive-url "https://sourceware.org/ml/kawa/")
  (instructions-url "https://www.gnu.org/software/kawa/Mailing-lists.html"))
 
+(package
+ (manager homebrew)
+ (name "kawa"))
+
 (version-control
  (web-url "https://gitlab.com/kashell/Kawa")
  (git-url "https://gitlab.com/kashell/Kawa.git")

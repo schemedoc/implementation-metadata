@@ -25,6 +25,10 @@
  (archive-url "https://lists.gnu.org/archive/html/mit-scheme-devel/")
  (instructions-url "https://lists.gnu.org/mailman/listinfo/mit-scheme-devel"))
 
+(package
+ (manager homebrew)
+ (name "mit-scheme"))
+
 (version-control
  (web-url "https://git.savannah.gnu.org/cgit/mit-scheme.git")
  (git-url "https://git.savannah.gnu.org/git/mit-scheme.git"))

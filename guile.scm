@@ -28,6 +28,10 @@
  (archive-url "https://lists.gnu.org/archive/html/guile-devel/")
  (instructions-url "https://lists.gnu.org/mailman/listinfo/guile-devel"))
 
+(package
+ (manager homebrew)
+ (name "guile"))
+
 (version-control
  (web-url "https://savannah.gnu.org/git/?group=guile")
  (git-url "https://git.savannah.gnu.org/git/guile.git"))

@@ -21,6 +21,10 @@
  (archive-url "https://mailman.iro.umontreal.ca/pipermail/gambit-list/")
  (instructions-url "https://mailman.iro.umontreal.ca/mailman/listinfo/gambit-list"))
 
+(package
+ (manager homebrew)
+ (name "gambit-scheme"))
+
 (version-control
  (web-url "https://github.com/gambit/gambit")
  (git-url "https://github.com/gambit/gambit.git")

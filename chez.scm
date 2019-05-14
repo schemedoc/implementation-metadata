@@ -18,6 +18,25 @@
  (name "Google group")
  (archive-url "https://groups.google.com/group/chez-scheme"))
 
+(package
+ (manager freebsd-ports)
+ (directory "lang")
+ (name "chez-scheme"))
+
+(package
+ (manager freebsd-ports)
+ (directory "lang")
+ (name "petite-chez"))
+
+(package
+ (manager homebrew)
+ (name "chezscheme"))
+
+(package
+ (manager pkgsrc)
+ (directory "wip")
+ (name "chezscheme"))
+
 (version-control
  (web-url "https://github.com/cisco/ChezScheme")
  (git-url "https://github.com/cisco/ChezScheme.git")

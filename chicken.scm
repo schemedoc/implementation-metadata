@@ -34,6 +34,10 @@
  (archive-url "https://lists.nongnu.org/archive/html/chicken-janitors/")
  (instructions-url "https://lists.nongnu.org/mailman/listinfo/chicken-janitors"))
 
+(package
+ (manager homebrew)
+ (name "chicken"))
+
 (version-control
  (web-url "https://code.call-cc.org/cgi-bin/gitweb.cgi?p=chicken-core.git")
  (git-url "https://code.call-cc.org/git/chicken-core.git")
