@@ -1,15 +1,15 @@
 (title "Cyclone Scheme")
 
-(homepage-url "http://justinethier.github.io/cyclone/")
+(homepage-url "https://justinethier.github.io/cyclone/")
 (issue-tracker-url "https://github.com/justinethier/cyclone/issues")
 
 (documentation
  (title "User Manual")
- (web-url "http://justinethier.github.io/cyclone/docs/User-Manual"))
+ (web-url "https://justinethier.github.io/cyclone/docs/User-Manual"))
 
 (documentation
  (title "API Documentation")
- (web-url "http://justinethier.github.io/cyclone/docs/API"))
+ (web-url "https://justinethier.github.io/cyclone/docs/API"))
 
 (package
  (manager arch-linux-aur)
