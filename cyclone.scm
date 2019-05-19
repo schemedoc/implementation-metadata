@@ -17,7 +17,8 @@
 
 (version-control
  (web-url "https://github.com/justinethier/cyclone")
- (git-url "https://github.com/justinethier/cyclone.git"))
+ (git-url "https://github.com/justinethier/cyclone.git")
+ (git-url "git@github.com:justinethier/cyclone.git"))
 
 (release
  (date (2019 4 15))
