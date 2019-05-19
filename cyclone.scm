@@ -24,4 +24,5 @@
  (date (2019 4 15))
  (version-number "0.11")
  (source-archive
-  (url "https://github.com/justinethier/cyclone-bootstrap/archive/v0.11.tar.gz")))
+  (url "https://github.com/justinethier/cyclone-bootstrap/archive/v0.11.tar.gz")
+  (hash sha256 "acc77b2db98074a41621f8c85b79361d7f3c94fc4af0aae061a1f64e5070b3f9")))
