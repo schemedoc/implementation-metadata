@@ -6,4 +6,4 @@
 #
 set -eu
 cd "$(dirname "$0")"/..
-grep -iF http: *.scm
+grep -niF http: *.scm
