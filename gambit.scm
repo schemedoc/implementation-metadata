@@ -1,7 +1,7 @@
 (title "Gambit")
 
 (homepage-url "http://dynamo.iro.umontreal.ca/wiki/index.php/Main_Page")
-(wikipedia-url "https://en.wikipedia.org/wiki/Gambit_(scheme_implementation)")
+(wikipedia-url "https://en.wikipedia.org/wiki/Gambit_%28scheme_implementation%29")
 (issue-tracker-url "https://github.com/gambit/gambit/issues")
 
 (documentation

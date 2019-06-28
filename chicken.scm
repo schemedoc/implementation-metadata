@@ -1,7 +1,7 @@
 (title "CHICKEN Scheme")
 
 (homepage-url "https://www.call-cc.org/")
-(wikipedia-url "https://en.wikipedia.org/wiki/Chicken_(Scheme_implementation)")
+(wikipedia-url "https://en.wikipedia.org/wiki/Chicken_%28Scheme_implementation%29")
 (issue-tracker-url "https://bugs.call-cc.org/")
 
 (documentation
