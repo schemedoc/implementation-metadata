@@ -1,6 +1,7 @@
 (title "MIT Scheme")
 
 (homepage-url "https://www.gnu.org/software/mit-scheme/")
+(wikipedia-url "https://en.wikipedia.org/wiki/MIT/GNU_Scheme")
 (issue-tracker-url "https://savannah.gnu.org/bugs/?func=addbug&group=mit-scheme")
 
 (documentation
