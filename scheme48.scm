@@ -1,6 +1,7 @@
 (title "Scheme 48")
 
 (homepage-url "http://www.s48.org/")
+(wikipedia-url "https://en.wikipedia.org/wiki/Scheme_48")
 
 (documentation
  (title "Reference Manual")
