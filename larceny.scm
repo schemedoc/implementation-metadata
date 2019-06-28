@@ -1,6 +1,7 @@
 (title "Larceny")
 
 (homepage-url "http://larcenists.org/")
+(wikipedia-url "https://en.wikipedia.org/wiki/Larceny_(Scheme_implementation)")
 (issue-tracker-url "https://github.com/larcenists/larceny/issues")
 
 (documentation
