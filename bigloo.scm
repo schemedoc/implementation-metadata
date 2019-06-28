@@ -1,6 +1,7 @@
 (title "Bigloo")
 
 (homepage-url "https://www-sop.inria.fr/mimosa/fp/Bigloo/")
+(wikipedia-url "https://en.wikipedia.org/wiki/Bigloo")
 
 (documentation
  (title "User manual")
