@@ -2,6 +2,7 @@
 
 (homepage-url "http://ikarus-scheme.org/")
 (homepage-url "https://launchpad.net/ikarus/")
+(wikipedia-url "https://en.wikipedia.org/wiki/Ikarus_(Scheme_implementation)")
 (issue-tracker-url "https://bugs.launchpad.net/ikarus")
 (community-forum-url "https://answers.launchpad.net/ikarus")
 
