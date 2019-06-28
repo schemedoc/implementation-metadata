@@ -1,6 +1,7 @@
 (title "Gauche")
 
 (homepage-url "https://practical-scheme.net/gauche/")
+(wikipedia-url "https://en.wikipedia.org/wiki/Gauche_(Scheme_implementation)")
 (issue-tracker-url "https://sourceforge.net/p/gauche/bugs/")
 
 (documentation
