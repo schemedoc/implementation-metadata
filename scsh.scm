@@ -1,6 +1,7 @@
 (title "Scsh")
 
 (homepage-url "https://scsh.net/")
+(wikipedia-url "https://en.wikipedia.org/wiki/Scsh")
 
 (documentation
  (title "Reference Manual")
