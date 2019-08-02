@@ -20,6 +20,17 @@
  (git-url "https://github.com/justinethier/cyclone.git")
  (git-url "git@github.com:justinethier/cyclone.git"))
 
+(features
+ c-ffi
+ interpreter
+ compile-to-c
+ cheney-on-the-mta
+ native-threads
+ full-continuations
+ full-tail-recursion
+ concurrent-gc
+ generational-gc)
+
 (release
  (date (2019 4 15))
  (version-number "0.11")
