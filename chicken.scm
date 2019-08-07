@@ -44,6 +44,17 @@
  (git-url "https://code.call-cc.org/git/chicken-core.git")
  (git-url "git://code.call-cc.org/chicken-core"))
 
+(features
+ c-ffi
+ interpreter
+ compile-to-c
+ cheney-on-the-mta
+ green-threads
+ full-continuations
+ full-tail-recursion
+ concurrent-gc
+ copying-gc)
+
 (release
  (date (2018 11 7))
  (version-number "5.0.0")
