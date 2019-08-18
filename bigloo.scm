@@ -2,6 +2,7 @@
 
 (homepage-url "https://www-sop.inria.fr/mimosa/fp/Bigloo/")
 (wikipedia-url "https://en.wikipedia.org/wiki/Bigloo")
+(issue-tracker-url "https://github.com/manuel-serrano/bigloo/issues")
 
 (documentation
  (title "User manual")
@@ -14,6 +15,11 @@
  (list-address "bigloo" "sophia.inria.fr")
  (archive-url "https://sympa.inria.fr/sympa/arc/bigloo")
  (instructions-url "https://www-sop.inria.fr/mimosa/fp/Bigloo/bigloo.html#Mailing-list"))
+
+(version-control
+ (web-url "https://github.com/manuel-serrano/bigloo")
+ (git-url "https://github.com/manuel-serrano/bigloo.git")
+ (git-url "git@github.com:manuel-serrano/bigloo.git"))
 
 (release
  (date (2018 12 18))
