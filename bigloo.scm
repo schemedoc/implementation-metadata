@@ -16,6 +16,10 @@
  (archive-url "https://sympa.inria.fr/sympa/arc/bigloo")
  (instructions-url "https://www-sop.inria.fr/mimosa/fp/Bigloo/bigloo.html#Mailing-list"))
 
+(package
+ (manager homebrew)
+ (name "bigloo"))
+
 (version-control
  (web-url "https://github.com/manuel-serrano/bigloo")
  (git-url "https://github.com/manuel-serrano/bigloo.git")
