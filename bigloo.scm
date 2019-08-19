@@ -1,3 +1,4 @@
+(id bigloo)
 (title "Bigloo")
 
 (homepage-url "https://www-sop.inria.fr/mimosa/fp/Bigloo/")

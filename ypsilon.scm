@@ -1,3 +1,4 @@
+(id ypsilon)
 (title "Ypsilon")
 
 (homepage-url "http://www.littlewingpinball.com/doc/en/ypsilon/index.html")

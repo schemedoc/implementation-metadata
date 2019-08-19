@@ -1,3 +1,4 @@
+(id gerbil)
 (short-title "Gerbil")
 (title "Gerbil Scheme")
 

@@ -1,3 +1,4 @@
+(id sagittarius)
 (short-title "Sagittarius")
 (title "Sagittarius Scheme")
 

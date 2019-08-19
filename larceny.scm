@@ -1,3 +1,4 @@
+(id larceny)
 (title "Larceny")
 
 (homepage-url "http://larcenists.org/")

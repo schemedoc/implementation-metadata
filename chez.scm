@@ -1,3 +1,4 @@
+(id chez)
 (short-title "Chez")
 (title "Chez Scheme")
 

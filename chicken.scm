@@ -1,3 +1,4 @@
+(id chicken)
 (short-title "Chicken")
 (title "CHICKEN Scheme")
 
