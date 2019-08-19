@@ -1,5 +1,5 @@
-(title "Cyclone Scheme")
 (short-title "Cyclone")
+(title "Cyclone Scheme")
 
 (homepage-url "https://justinethier.github.io/cyclone/")
 (issue-tracker-url "https://github.com/justinethier/cyclone/issues")

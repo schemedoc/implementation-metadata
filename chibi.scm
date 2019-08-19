@@ -1,5 +1,5 @@
-(title "Chibi-Scheme")
 (short-title "Chibi")
+(title "Chibi-Scheme")
 
 (homepage-url "http://synthcode.com/wiki/chibi-scheme")
 (issue-tracker-url "https://github.com/ashinn/chibi-scheme/issues")

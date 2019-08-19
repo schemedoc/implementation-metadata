@@ -1,5 +1,5 @@
-(title "Sagittarius Scheme")
 (short-title "Sagittarius")
+(title "Sagittarius Scheme")
 
 (homepage-url "https://bitbucket.org/ktakashi/sagittarius-scheme")
 (issue-tracker-url "https://bitbucket.org/ktakashi/sagittarius-scheme/issues")

@@ -1,5 +1,5 @@
-(title "GNU Guile")
 (short-title "Guile")
+(title "GNU Guile")
 
 (homepage-url "https://www.gnu.org/software/guile/")
 (wikipedia-url "https://en.wikipedia.org/wiki/GNU_Guile")

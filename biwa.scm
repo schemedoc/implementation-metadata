@@ -1,5 +1,5 @@
-(title "BiwaScheme")
 (short-title "Biwa")
+(title "BiwaScheme")
 
 (homepage-url "https://www.biwascheme.org/")
 (issue-tracker-url "https://github.com/biwascheme/biwascheme/issues")

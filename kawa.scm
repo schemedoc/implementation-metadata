@@ -1,5 +1,5 @@
-(title "Kawa Scheme")
 (short-title "Kawa")
+(title "Kawa Scheme")
 
 (homepage-url "https://www.gnu.org/software/kawa/")
 (wikipedia-url "https://en.wikipedia.org/wiki/Kawa_%28Scheme_implementation%29")

@@ -1,5 +1,5 @@
-(title "Chez Scheme")
 (short-title "Chez")
+(title "Chez Scheme")
 
 (homepage-url "https://www.scheme.com/")
 (homepage-url "https://cisco.github.io/ChezScheme/")
