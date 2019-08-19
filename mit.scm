@@ -1,4 +1,5 @@
 (title "MIT Scheme")
+(long-title "MIT/GNU Scheme")
 
 (homepage-url "https://www.gnu.org/software/mit-scheme/")
 (wikipedia-url "https://en.wikipedia.org/wiki/MIT/GNU_Scheme")

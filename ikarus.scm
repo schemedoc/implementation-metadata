@@ -1,4 +1,5 @@
-(title "Ikarus")
+(title "Ikarus Scheme")
+(short-title "Ikarus")
 
 (homepage-url "http://ikarus-scheme.org/")
 (homepage-url "https://launchpad.net/ikarus/")

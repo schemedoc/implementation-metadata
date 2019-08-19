@@ -1,4 +1,5 @@
-(title "Gambit")
+(title "Gambit Scheme")
+(short-title "Gambit")
 
 (homepage-url "http://gambitscheme.org/")
 (wikipedia-url "https://en.wikipedia.org/wiki/Gambit_%28scheme_implementation%29")

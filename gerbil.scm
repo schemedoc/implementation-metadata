@@ -1,4 +1,5 @@
 (title "Gerbil Scheme")
+(short-title "Gerbil")
 
 (homepage-url "https://cons.io/")
 (homepage-url "https://github.com/vyzo/gerbil")

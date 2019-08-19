@@ -1,4 +1,5 @@
 (title "CHICKEN Scheme")
+(short-title "Chicken")
 
 (homepage-url "https://www.call-cc.org/")
 (wikipedia-url "https://en.wikipedia.org/wiki/Chicken_%28Scheme_implementation%29")
