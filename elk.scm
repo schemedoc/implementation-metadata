@@ -5,6 +5,8 @@
 
 (homepage-url "http://sam.zoy.org/elk/")
 
+(person "Sam Hocevar")
+
 (release
  (version "3.99.8")
  (source

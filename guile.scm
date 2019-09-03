@@ -6,6 +6,10 @@
 (wikipedia-url "https://en.wikipedia.org/wiki/GNU_Guile")
 (issue-tracker-url "https://debbugs.gnu.org/cgi/pkgreport.cgi?pkg=guile")
 
+(person "Andy Wingo")
+(person "Ludovic Courtès")
+(person "Jim Blandy")
+
 (documentation
  (title "Reference Manual")
  (web-url "https://www.gnu.org/software/guile/manual/"))

@@ -5,6 +5,8 @@
 (wikipedia-url "https://en.wikipedia.org/wiki/Gauche_%28Scheme_implementation%29")
 (issue-tracker-url "https://sourceforge.net/p/gauche/bugs/")
 
+(person "Shiro Kawai")
+
 (documentation
  (title "Reference Manual")
  (web-url "https://practical-scheme.net/gauche/man/gauche-refe/index.html")

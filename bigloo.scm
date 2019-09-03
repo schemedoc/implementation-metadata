@@ -5,6 +5,8 @@
 (wikipedia-url "https://en.wikipedia.org/wiki/Bigloo")
 (issue-tracker-url "https://github.com/manuel-serrano/bigloo/issues")
 
+(person "Manuel Serrano")
+
 (documentation
  (title "User manual")
  (web-url "https://www-sop.inria.fr/mimosa/fp/Bigloo/doc/bigloo.html"))

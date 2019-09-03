@@ -5,6 +5,8 @@
 (homepage-url "https://justinethier.github.io/cyclone/")
 (issue-tracker-url "https://github.com/justinethier/cyclone/issues")
 
+(person "Justin Ethier")
+
 (documentation
  (title "User Manual")
  (web-url "https://justinethier.github.io/cyclone/docs/User-Manual"))

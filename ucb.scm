@@ -3,6 +3,8 @@
 
 (homepage-url "https://inst.eecs.berkeley.edu/~scheme/")
 
+(organization "University of California, Berkeley")
+
 (documentation
  (title "FAQ")
  (web-url "https://inst.eecs.berkeley.edu/~scheme/faq.html"))

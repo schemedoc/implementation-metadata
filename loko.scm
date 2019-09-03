@@ -6,6 +6,8 @@
 (gitlab "weinholt/loko")
 (issue-tracker gitlab)
 
+(person "Göran Weinholt")
+
 (release
  (date 2019-07-29)
  (archive "https://scheme.fail/releases/loko-0.1.0.tar.gz"))

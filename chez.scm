@@ -7,6 +7,10 @@
 (wikipedia-url "https://en.wikipedia.org/wiki/Chez_Scheme")
 (issue-tracker-url "https://github.com/cisco/ChezScheme/issues")
 
+(person "R. Kent Dybvig")
+(organization "Cadence Research Systems")
+(organization "Indiana University")
+
 (documentation
  (title "User's Guide")
  (web-url "https://cisco.github.io/ChezScheme/csug9.5/csug.html"))

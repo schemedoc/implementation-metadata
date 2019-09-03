@@ -4,6 +4,11 @@
 (homepage-url "https://scsh.net/")
 (wikipedia-url "https://en.wikipedia.org/wiki/Scsh")
 
+(person "Olin Shivers")
+(person "Brian Carlstrom")
+(person "Martin Gasbichler")
+(person "Mike Sperber")
+
 (documentation
  (title "Reference Manual")
  (web-url "https://scsh.net/docu/html/man.html"))

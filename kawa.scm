@@ -7,6 +7,8 @@
 (issue-tracker-url "https://gitlab.com/kashell/Kawa/issues")
 (issue-tracker-url "https://savannah.gnu.org/bugs/?group=kawa")
 
+(person "Per Bothner")
+
 (documentation
  (title "Reference Documentation")
  (web-url "https://www.gnu.org/software/kawa/pt01.html"))

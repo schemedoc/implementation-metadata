@@ -8,6 +8,8 @@
 (issue-tracker-url "https://bugs.launchpad.net/ikarus")
 (community-forum-url "https://answers.launchpad.net/ikarus")
 
+(person "Abdulaziz Ghuloum")
+
 (documentation
  (title "User's Guide")
  (web-url "http://ikarus-scheme.org/ikarus-scheme-users-guide.pdf"))

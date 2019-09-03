@@ -4,6 +4,8 @@
 (homepage-url "https://github.com/leftmike/foment")
 (issue-tracker-url "https://github.com/leftmike/foment/issues")
 
+(person "Mike Montague")
+
 (documentation
  (title "Wiki")
  (web-url "https://github.com/leftmike/foment/wiki/Foment"))

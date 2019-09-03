@@ -3,6 +3,9 @@
 
 (homepage-url "http://kaolin.unice.fr/STk/")
 
+(person "Erick Gallesio")
+(organization "Université Nice-Sophia-Antipolis")
+
 (documentation
  (title "Reference Manual (4.0.0)")
  (web-url "http://kaolin.unice.fr/STk/Doc/STk.pdf"))

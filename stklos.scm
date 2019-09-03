@@ -7,6 +7,7 @@
 (issue-tracker github)
 
 (person "Erick Gallesio")
+(organization "Université Nice-Sophia-Antipolis")
 
 (release
  (version "1.31")

@@ -6,6 +6,8 @@
 (wikipedia-url "https://en.wikipedia.org/wiki/IronScheme")
 (issue-tracker-url "https://github.com/leppie/IronScheme/issues")
 
+(person "Llewellyn Pritchard")
+
 (irc-channel
  (channel "#IronScheme")
  (network "irc.freenode.net")

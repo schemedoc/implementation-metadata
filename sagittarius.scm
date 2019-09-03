@@ -5,6 +5,8 @@
 (homepage-url "https://bitbucket.org/ktakashi/sagittarius-scheme")
 (issue-tracker-url "https://bitbucket.org/ktakashi/sagittarius-scheme/issues")
 
+(person "Takashi Kato")
+
 (documentation
  (title "Users' Reference")
  (web-url "https://ktakashi.github.io/sagittarius-online-ref.html"))

@@ -6,6 +6,8 @@
 (wikipedia-url "https://en.wikipedia.org/wiki/Gambit_%28scheme_implementation%29")
 (issue-tracker-url "https://github.com/gambit/gambit/issues")
 
+(person "Marc Feeley")
+
 (documentation
  (title "Manual")
  (web-url "https://www.iro.umontreal.ca/~gambit/doc/gambit.html")

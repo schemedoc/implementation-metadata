@@ -5,6 +5,8 @@
 (wikipedia-url "https://en.wikipedia.org/wiki/Larceny_%28Scheme_implementation%29")
 (issue-tracker-url "https://github.com/larcenists/larceny/issues")
 
+(person "William D Clinger")
+
 (documentation
  (title "User's Manual")
  (web-url "http://larcenists.org/Documentation/Documentation1.3/user-manual-alt.html"))

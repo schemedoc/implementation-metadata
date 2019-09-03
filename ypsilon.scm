@@ -5,6 +5,9 @@
 (wikipedia-url "https://en.wikipedia.org/wiki/Ypsilon_%28Scheme_implementation%29")
 (issue-tracker-url "https://code.google.com/archive/p/ypsilon/issues")
 
+(person "Yoshikatsu Fujita")
+(organization "LittleWing Co. Ltd.")
+
 (documentation
  (title "Assorted documents on Google Code")
  (web-url "https://code.google.com/archive/p/ypsilon/wikis"))
