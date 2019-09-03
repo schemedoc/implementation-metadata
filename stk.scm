@@ -14,6 +14,10 @@
  (title "FAQ")
  (web-url "http://kaolin.unice.fr/STk/FAQ/"))
 
+(features
+ object-system
+ meta-object-protocol)
+
 (release
  (date "1996-09-26")
  (archive "http://kaolin.unice.fr/STk/Distrib/STk-3.1.1.tar.gz"))

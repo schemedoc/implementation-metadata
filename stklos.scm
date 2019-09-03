@@ -9,6 +9,9 @@
 (person "Erick Gallesio")
 (organization "Université Nice-Sophia-Antipolis")
 
+(features
+ object-system)
+
 (release
  (version "1.31")
  (date "2019-07-13")
