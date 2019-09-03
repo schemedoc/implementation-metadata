@@ -1,27 +1,37 @@
 (id bit)
 (title "BIT")
 
-(organization "Universite de Montreal")
 (person "Danny Dubé")
 (person "Marc Feeley")
+(organization "Universite de Montreal")
 
 (paper
+ (type phdthesis)
  (title "Un système de programmation Scheme pour micro-contrôleur")
- (author "Danny Dubé"))
+ (author "Danny Dubé")
+ (year "1997")
+ (url "https://www2.ift.ulaval.ca/~dadub100/files/memoire.pdf"))
 
 (paper
- (title "Un GC temps re'el semi-compactant")
+ (type article)
+ (title "Un GC temps réel semi-compactant")
  (author "Danny Dubé")
  (author "Marc Feeley")
  (author "Manuel Serrano")
- (date "1996"))
+ (journal "Actes des Journées Francophones des Langages Applicatifs")
+ (volume "1996")
+ (year "1996")
+ (url "https://www2.ift.ulaval.ca/~dadub100/files/JFLA96.pdf"))
 
 (paper
- (title "BIT: A Very Compact Scheme System for Microcontrollers")
+ (type article)
+ (title "Bit: A very compact Scheme system for microcontrollers")
  (author "Danny Dubé")
  (author "Marc Feeley")
- (url "https://www2.ift.ulaval.ca/~dadub100/files/HOSC.pdf")
- (date "2005"))
+ (journal "Higher-order and symbolic computation")
+ (volume "18")
+ (year "2005")
+ (url "https://www2.ift.ulaval.ca/~dadub100/files/HOSC.pdf"))
 
 (release
  (date "1995")
