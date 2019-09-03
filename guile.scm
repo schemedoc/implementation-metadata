@@ -6,6 +6,9 @@
 (wikipedia-url "https://en.wikipedia.org/wiki/GNU_Guile")
 (issue-tracker-url "https://debbugs.gnu.org/cgi/pkgreport.cgi?pkg=guile")
 
+(person "Aubrey Jaffer")
+(person "Tom Lord")
+(person "Miles Bader")
 (person "Andy Wingo")
 (person "Ludovic Courtès")
 (person "Jim Blandy")
