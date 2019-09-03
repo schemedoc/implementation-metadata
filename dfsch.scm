@@ -1,5 +1,7 @@
 (id dfsch)
 (title "dfsch")
+(long-title "dfox's scheme implementation")
 
-(version-control (github "adh/dfsch"))
 (person "Aleš Hakl")
+
+(github "adh/dfsch")
