@@ -7,6 +7,7 @@
 (issue-tracker-url "https://github.com/gambit/gambit/issues")
 
 (person "Marc Feeley")
+(organization "Universite de Montreal")
 
 (documentation
  (title "Manual")
