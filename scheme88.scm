@@ -1,5 +1,6 @@
 (id scheme88)
-(short-title "s88")
-(title "Scheme-88")
-(long-title "Scheme 8088")
-(tagline "Scheme for DOS")
+(title "Scheme 88")
+(tagline "re-implementation of Scheme 84 to Ibuki Common Lisp")
+(based-on "scheme84")
+
+(organization "Rice University")
