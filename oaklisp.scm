@@ -4,6 +4,7 @@
 
 (person "Kevin J. Lang")
 (person "Barak A. Pearlmutter")
+(organization "Carnegie Mellon University")
 
 (features
  bytecode-compiler
