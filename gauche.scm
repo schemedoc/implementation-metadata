@@ -37,6 +37,10 @@
  (git-url "https://github.com/shirok/Gauche.git")
  (git-url "git@github.com:shirok/Gauche.git"))
 
+(features
+ interpreter
+ stack-based-vm)
+
 (release
  (date (2018 12 20))
  (version-number "0.9.7")
