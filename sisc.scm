@@ -2,6 +2,7 @@
 (title "SISC")
 (long-title "Second Interpreter of Scheme Code")
 (tagline "fast, complete R5RS interpreter for the JVM")
+(based-on lisc)
 
 (homepage-url "http://sisc-scheme.org/")
 (sourceforge "sisc")
@@ -17,8 +18,11 @@
 
 (feature
  full-continuations
+ interpreter
  jvm
- r5rs)
+ modules
+ r5rs
+ user-defined-first-class-types)
 
 (package
  (manager freebsd-ports)
