@@ -5,10 +5,11 @@
 (sourceforge "jscheme")
 
 (person "Peter Norvig")
-(person "Tim Hickey")
-(person "Ken Anderson")
+(author "Kenneth R Anderson")
+(author "Timothy J Hickey")
 (organization "Brandeis University")
 (organization "BBN Technologies")
 
 (features
+ jvm
  r4rs)
