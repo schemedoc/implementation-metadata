@@ -3,8 +3,20 @@
 (long-title "MIT/GNU Scheme")
 
 (homepage-url "https://www.gnu.org/software/mit-scheme/")
-(wikipedia-url "https://en.wikipedia.org/wiki/MIT/GNU_Scheme")
+(wikipedia "MIT/GNU_Scheme")
 (issue-tracker-url "https://savannah.gnu.org/bugs/?func=addbug&group=mit-scheme")
+
+(person "Chris Hanson")
+(person "Guillermo J. Rozas")
+(person "Taylor R. Campbell")
+(person "Stephen Adams")
+(person "Matt Birkholz")
+(person "Arthur A. Gleckler")
+(person "Joe Marshall")
+(person "Brian A. LaMacchia")
+(person "Mark Friedman")
+(person "Henry M. Wu")
+(organization "Massachusetts Institute of Technology")
 
 (documentation
  (title "User's Manual")
