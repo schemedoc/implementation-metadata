@@ -5,3 +5,6 @@
 (homepage-url "http://www.sof.ch/dan/qscheme/index-e.html")
 
 (person "Daniel Crettol")
+
+(features
+ r5rs)
