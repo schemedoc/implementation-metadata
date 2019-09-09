@@ -1,4 +1,4 @@
-(id chibi)
+(id "chibi")
 (short-title "Chibi")
 (title "Chibi-Scheme")
 

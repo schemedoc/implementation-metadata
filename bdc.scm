@@ -1,4 +1,4 @@
-(id bdc)
+(id "bdc")
 (short-title "BDC")
 (title "BDC Scheme")
 (tagline "fast interpreter for the JVM")

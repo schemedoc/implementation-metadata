@@ -1,4 +1,4 @@
-(id loko)
+(id "loko")
 (short-title "Loko")
 (title "Loko Scheme")
 

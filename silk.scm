@@ -1,4 +1,4 @@
-(id silk)
+(id "silk")
 (title "SILK")
 (based-on jscheme)
 

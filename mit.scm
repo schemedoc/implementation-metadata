@@ -1,4 +1,4 @@
-(id mit)
+(id "mit")
 (title "MIT Scheme")
 (long-title "MIT/GNU Scheme")
 

@@ -1,4 +1,4 @@
-(id schluessel)
+(id "schluessel")
 (title "Schluessel")
 (tagline "Java/JavaScript R5RS implementation with lots of extras")
 

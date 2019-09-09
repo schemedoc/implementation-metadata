@@ -1,4 +1,4 @@
-(id femtolisp)
+(id "femtolisp")
 (title "femtolisp")
 (tagline "lightweight, robust, fast Scheme-like Lisp")
 

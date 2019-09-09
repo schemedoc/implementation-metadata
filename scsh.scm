@@ -1,4 +1,4 @@
-(id scsh)
+(id "scsh")
 (title "Scsh")
 
 (homepage-url "https://scsh.net/")

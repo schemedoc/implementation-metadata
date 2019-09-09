@@ -1,4 +1,4 @@
-(id racket)
+(id "racket")
 (title "Racket")
 
 (homepage-url "https://racket-lang.org/")

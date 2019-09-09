@@ -1,4 +1,4 @@
-(id pixie)
+(id "pixie")
 (short-title "Pixie")
 (title "Pixie Scheme")
 

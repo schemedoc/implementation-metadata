@@ -1,4 +1,4 @@
-(id jakld)
+(id "jakld")
 (title "JAKLD")
 (tagline "a Lisp driver to be embedded in Java applications")
 

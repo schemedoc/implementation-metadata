@@ -1,4 +1,4 @@
-(id scm)
+(id "scm")
 (title "SCM")
 (long-title "The SCM Implementation of Scheme")
 

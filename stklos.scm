@@ -1,4 +1,4 @@
-(id stklos)
+(id "stklos")
 (title "STklos")
 (long-title "STklos Scheme")
 (tagline "R7RS interpreter with GTK GUI and CLOS-like object system")

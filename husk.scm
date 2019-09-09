@@ -1,4 +1,4 @@
-(id husk)
+(id "husk")
 (short-title "Husk")
 (title "Husk Scheme")
 

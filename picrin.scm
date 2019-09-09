@@ -1,4 +1,4 @@
-(id picrin)
+(id "picrin")
 (title "Picrin")
 
 (version-control

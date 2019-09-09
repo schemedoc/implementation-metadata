@@ -1,4 +1,4 @@
-(id ikarus)
+(id "ikarus")
 (short-title "Ikarus")
 (title "Ikarus Scheme")
 

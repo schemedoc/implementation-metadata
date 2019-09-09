@@ -1,4 +1,4 @@
-(id dream)
+(id "dream")
 (title "Dream")
 (long-title "The 'dream' Scheme Interpreter")
 (tagline "R4RS interpreter written in Assembler for Linux")

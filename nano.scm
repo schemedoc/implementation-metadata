@@ -1,4 +1,4 @@
-(id nano)
+(id "nano")
 (title "nanoScheme")
 (tagline "a tiny scheme interpreter, written in Delphi as a Windows console app")
 

@@ -1,4 +1,4 @@
-(id ps3i)
+(id "ps3i")
 (title "PS3I")
 (long-title "Persistent Server-Side Scheme Interpreter")
 (tagline "multi-user, multi-threaded, servlet R4RS implementation in Java")

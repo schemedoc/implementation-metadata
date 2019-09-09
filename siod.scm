@@ -1,4 +1,4 @@
-(id siod)
+(id "siod")
 (title "SIOD")
 (long-title "Scheme In One Defun")
 

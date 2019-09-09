@@ -1,4 +1,4 @@
-(id jscheme)
+(id "jscheme")
 (title "Jscheme")
 
 (homepage-url "https://norvig.com/jscheme.html")

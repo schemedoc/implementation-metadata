@@ -1,4 +1,4 @@
-(id dfsch)
+(id "dfsch")
 (title "dfsch")
 (long-title "dfox's scheme implementation")
 

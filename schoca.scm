@@ -1,4 +1,4 @@
-(id schoca)
+(id "schoca")
 (title "Schoca")
 (tagline "Scheme for OCaml")
 

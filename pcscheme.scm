@@ -1,4 +1,4 @@
-(id pcscheme)
+(id "pcscheme")
 (title "PC-SCHEME")
 
 (organization "Texas Instruments")

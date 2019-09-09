@@ -1,4 +1,4 @@
-(id kali)
+(id "kali")
 (short-title "Kali")
 (title "Kali Scheme")
 (tagline "distributed Scheme with efficient transmission of higher-order objects such as closures and continuations")

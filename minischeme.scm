@@ -1,4 +1,4 @@
-(id minischeme)
+(id "minischeme")
 (title "Mini-Scheme")
 
 (person "Atsushi Moriwaki")

@@ -1,4 +1,4 @@
-(id hscheme)
+(id "hscheme")
 (title "HScheme")
 (tagline "Guile for Haskell")
 

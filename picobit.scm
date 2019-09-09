@@ -1,4 +1,4 @@
-(id picobit)
+(id "picobit")
 (title "PICOBIT")
 
 (person "Marc Feeley")

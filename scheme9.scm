@@ -1,4 +1,4 @@
-(id scheme9)
+(id "scheme9")
 (short-title "S9fES")
 (title "Scheme 9")
 (long-title "Scheme 9 from Empty Space")

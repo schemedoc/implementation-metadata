@@ -1,4 +1,4 @@
-(id vscm)
+(id "vscm")
 (title "VSCM")
 
 (sourceforge "vscm")

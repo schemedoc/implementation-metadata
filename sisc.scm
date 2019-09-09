@@ -1,4 +1,4 @@
-(id sisc)
+(id "sisc")
 (title "SISC")
 (long-title "Second Interpreter of Scheme Code")
 (tagline "fast, complete R5RS interpreter for the JVM")

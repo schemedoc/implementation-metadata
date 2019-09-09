@@ -1,4 +1,4 @@
-(id qscheme)
+(id "qscheme")
 (title "QScheme")
 (tagline "fast interpreter with GTK bindings")
 

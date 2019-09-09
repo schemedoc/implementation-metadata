@@ -1,4 +1,4 @@
-(id kawa)
+(id "kawa")
 (short-title "Kawa")
 (title "Kawa Scheme")
 

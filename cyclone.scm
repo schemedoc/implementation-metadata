@@ -1,4 +1,4 @@
-(id cyclone)
+(id "cyclone")
 (short-title "Cyclone")
 (title "Cyclone Scheme")
 

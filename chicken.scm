@@ -1,4 +1,4 @@
-(id chicken)
+(id "chicken")
 (short-title "Chicken")
 (title "CHICKEN Scheme")
 

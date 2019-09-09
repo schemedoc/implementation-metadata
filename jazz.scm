@@ -1,4 +1,4 @@
-(id jazz)
+(id "jazz")
 (title "JazzScheme")
 (tagline "")
 

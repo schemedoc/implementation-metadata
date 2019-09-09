@@ -1,4 +1,4 @@
-(id gauche)
+(id "gauche")
 (title "Gauche")
 
 (homepage-url "https://practical-scheme.net/gauche/")

@@ -1,4 +1,4 @@
-(id foment)
+(id "foment")
 (title "Foment")
 
 (homepage-url "https://github.com/leftmike/foment")
