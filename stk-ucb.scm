@@ -1,5 +1,7 @@
-(id ucb)
+(id stk-ucb)
 (title "UCB Scheme")
+(tagline "a light fork of STk for teaching at Berkeley")
+(based-on "stk")
 
 (homepage-url "https://inst.eecs.berkeley.edu/~scheme/")
 
