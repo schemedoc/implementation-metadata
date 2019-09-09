@@ -1,5 +1,6 @@
 (id stk)
 (title "STk")
+(tagline "R4RS interpreter with Tk GUI and CLOS-like object system")
 
 (homepage-url "http://kaolin.unice.fr/STk/")
 
@@ -15,8 +16,13 @@
  (web-url "http://kaolin.unice.fr/STk/FAQ/"))
 
 (features
+ generic-functions
+ interpreter
+ meta-object-protocol
+ multi-methods
+ multiple-inheritance
  object-system
- meta-object-protocol)
+ tiny-clos)
 
 (release
  (date "1996-09-26")
