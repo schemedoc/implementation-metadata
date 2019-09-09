@@ -3,7 +3,9 @@
 (tagline "complete R5RS interpreter for the JVM")
 
 (homepage-url "http://home.j00.itscom.net/ilma/english/viivi/")
+
 (person "Ilma")
+(organization "Shibuya.lisp")
 
 (features
  case-sensitive-symbols
