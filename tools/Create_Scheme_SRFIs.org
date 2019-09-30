@@ -1,6 +1,6 @@
 * Purpose
 
-Screen-scrap the pages listing supported SRFIs for various Scheme implementations and generate either an HTML-page or a
+Screen-scrape the pages listing supported SRFIs for various Scheme implementations and generate either an HTML-page or a
 Github-flavored Markdown formatted table listing which implementation supports which SRFIs.
 
 * How
