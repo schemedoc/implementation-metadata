@@ -1,6 +1,7 @@
 (id "chicken")
 (short-title "Chicken")
 (title "CHICKEN Scheme")
+(tagline "Scheme-to-C compiler with lots of libraries and friendly community")
 
 (homepage-url "https://www.call-cc.org/")
 (wikipedia-url "https://en.wikipedia.org/wiki/Chicken_%28Scheme_implementation%29")
