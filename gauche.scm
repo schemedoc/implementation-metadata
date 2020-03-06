@@ -42,7 +42,7 @@
  stack-based-vm)
 
 (release
- (date (2018 12 20))
+ (date "2018-12-20")
  (version-number "0.9.7")
  (source-archive
   (url "https://prdownloads.sourceforge.net/gauche/Gauche-0.9.7.tgz"))
@@ -50,7 +50,7 @@
   "https://practical-scheme.net/gauche/gmemo/?Release%200.9.7"))
 
 (release
- (date (2019 6 16))
+ (date "2019-06-16")
  (version-number "0.9.8")
  (source-archive
   (url "http://prdownloads.sourceforge.net/gauche/Gauche-0.9.8.tgz"))

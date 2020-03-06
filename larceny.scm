@@ -23,7 +23,7 @@
  (git-url "git@github.com:larcenists/larceny.git"))
 
 (release
- (date (2017 8 6))
+ (date "2017-08-06")
  (version-number "1.3")
  (source-archive
   (url "http://larcenists.org/LarcenyReleases/larceny-1.3-src.tar.gz")

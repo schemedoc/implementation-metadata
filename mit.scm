@@ -49,7 +49,7 @@
  (git-url "https://git.savannah.gnu.org/git/mit-scheme.git"))
 
 (release
- (date (2019 3 16))
+ (date "2019-03-16")
  (version-number "10.1.6")
  (source-archive
   (url "https://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.6/mit-scheme-10.1.6.tar.gz")))

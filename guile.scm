@@ -47,7 +47,7 @@
  (git-url "https://git.savannah.gnu.org/git/guile.git"))
 
 (release
- (date (2018 7 2))
+ (date "2018-07-02")
  (version-number "2.2.4")
  (source-archive
   (url "https://ftp.gnu.org/gnu/guile/guile-2.2.4.tar.gz"))

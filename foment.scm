@@ -16,7 +16,7 @@
  (git-url "git@github.com:leftmike/foment.git"))
 
 (release
- (date (2014 3 29))
+ (date "2014-03-29")
  (version-number "0.4")
  (source-archive
   (url "https://github.com/leftmike/foment/archive/v0.4.zip"))
@@ -24,7 +24,7 @@
   (url "https://github.com/leftmike/foment/archive/v0.4.tar.gz")))
 
 (release
- (date (2014 4 2))
+ (date "2014-04-02")
  (version-number "0.4.1")
  (source-archive
   (url "https://github.com/leftmike/foment/archive/v0.4.1.zip"))

@@ -29,7 +29,7 @@
  (instructions-url "https://scsh.net/support.html"))
 
 (release
- (date (2006 5 16))
+ (date "2006-05-16")
  (version-number "0.6.7")
  (source-archive
   (url "https://ftp.scsh.net/pub/scsh/0.6/scsh-0.6.7.tar.gz")))

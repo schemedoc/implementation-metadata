@@ -35,7 +35,7 @@
  (git-url "git@github.com:ashinn/chibi-scheme.git"))
 
 (release
- (date (2018 1 25))
+ (date "2018-01-25")
  (version-number "0.8.0")
  (source-archive
   (url "http://synthcode.com/scheme/chibi/chibi-scheme-0.8.0.tgz")

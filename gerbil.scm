@@ -33,7 +33,7 @@
  (git-url "git@github.com:vyzo/gerbil.git"))
 
 (release
- (date (2019 2 9))
+ (date "2019-02-09")
  (version-number "0.15.1")
  (source-archive
   (url "https://github.com/vyzo/gerbil/archive/v0.15.1.tar.gz")

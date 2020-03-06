@@ -37,7 +37,7 @@
  (git-url "git@github.com:gambit/gambit.git"))
 
 (release
- (date (2019 2 5))
+ (date "2019-02-05")
  (version-number "4.9.3")
  (source-archive
   (url "https://www-labs.iro.umontreal.ca/~gambit/download/gambit/v4.9/source/gambit-v4_9_3.tgz"))

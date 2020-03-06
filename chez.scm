@@ -49,7 +49,7 @@
  (git-url "git@github.com:cisco/ChezScheme.git"))
 
 (release
- (date (2019 3 22))
+ (date "2019-03-22")
  (version-number "9.5.2")
  (source-archive
   (url "https://github.com/cisco/ChezScheme/archive/v9.5.2.zip"))
