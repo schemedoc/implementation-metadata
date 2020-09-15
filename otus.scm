@@ -5,6 +5,7 @@
 (based-on owl)
 
 (github "otus-lisp/otus")
+(repology "ol")
 
 (person "Yuriy Chumak")
 
