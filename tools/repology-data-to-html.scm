@@ -61,7 +61,14 @@
             data))
 
 (define projects
-  (list-sort string-ci<?
+  (list-sort (lambda (a b)
+               (let ((a-count (hash-table-size
+                               (hash-table-ref project-repo-names a)))
+                     (b-count (hash-table-size
+                               (hash-table-ref project-repo-names b))))
+                 (if (= a-count b-count)
+                     (string-ci<? a b)
+                     (> a-count b-count))))
              (hash-table-keys project-repo-names)))
 
 (define repo-counts
