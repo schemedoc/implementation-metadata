@@ -10,6 +10,11 @@
 (define (writeln x) (write x) (newline))
 (define (assoc? key alist) (cdr (or (assoc key alist) '(#f #f))))
 
+(define (project-name-stem name)
+  (and name
+       (let ((name (sys-basename name)))
+         name)))
+
 (define data (with-input-from-file "repology-data.scm" read))
 
 (define project-repo-names (make-hash-table equal?))
@@ -20,9 +25,8 @@
                 (cons project
                       (for-each (lambda (x)
                                   (let ((repo (assoc? "repo" x))
-                                        (name (assoc? "visiblename" x)))
-                                    (when name
-                                      (set! name (sys-basename name)))
+                                        (name (project-name-stem
+                                               (assoc? "visiblename" x))))
                                     (hash-table-update!/default
                                      project-repo-names
                                      project
