@@ -61,7 +61,10 @@
      (title "Repology data")
      (style ,(string-append
               "table, td, th { border: 1px solid black; }"
-              "td { vertical-align: top }")))
+              "td { vertical-align: top }"
+              "td.canonical { background-color: lightgreen; }"
+              "td.noncanonical { background-color: pink; }"
+              "td.missing { }")))
     (body
      (h1 "Repology data")
      (table
@@ -71,8 +74,16 @@
       ,@(map (lambda (repo)
                `(tr (td ,repo)
                     ,@(map (lambda (project)
-                             `(td ,(or (project-repo-name project repo)
-                                       "")))
+                             (let* ((name (or (project-repo-name project repo)
+                                              ""))
+                                    (class (cond ((string=? name "")
+                                                  "missing")
+                                                 ((string=? name project)
+                                                  "canonical")
+                                                 (else
+                                                  "noncanonical"))))
+                               `(td (@ (class ,class))
+                                    ,(or name ""))))
                            projects)))
              repos)))))
 
