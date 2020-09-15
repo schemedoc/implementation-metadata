@@ -29,14 +29,15 @@
   (and (not (string-prefix? "." (sys-basename path)))
        (string-suffix? ".scm" path)))
 
+(define schemes-dir (string-append (script-directory) "../schemes/"))
+
 (define (list-implementations)
-  (let ((dir (string-append (script-directory) "..")))
-    (list-sort string-ci<?
-               (map path-sans-extension
-                    (directory-list dir :filter scm-file?)))))
+  (list-sort string-ci<?
+             (map path-sans-extension
+                  (directory-list schemes-dir :filter scm-file?))))
 
 (define (implementation-data impl)
-  (let ((filename (string-append (script-directory) "../" impl ".scm")))
+  (let ((filename (string-append schemes-dir impl ".scm")))
     (with-input-from-file filename read-all)))
 
 (define (repology-project form)
