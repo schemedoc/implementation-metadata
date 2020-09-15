@@ -8,12 +8,12 @@
 (person "Justin Ethier")
 
 (documentation
- (title "User Manual")
- (web-url "https://justinethier.github.io/cyclone/docs/User-Manual"))
-
-(documentation
- (title "API Documentation")
- (web-url "https://justinethier.github.io/cyclone/docs/API"))
+ (document
+  (title "User Manual")
+  (web-url "https://justinethier.github.io/cyclone/docs/User-Manual"))
+ (document
+  (title "API Documentation")
+  (web-url "https://justinethier.github.io/cyclone/docs/API")))
 
 (repology "cyclone-scheme")
 
