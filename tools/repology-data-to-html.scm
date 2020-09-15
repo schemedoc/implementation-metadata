@@ -10,10 +10,30 @@
 (define (writeln x) (write x) (newline))
 (define (assoc? key alist) (cdr (or (assoc key alist) '(#f #f))))
 
+(define (remove-version string)
+  (define (version-char? char)
+    (or (char-numeric? char)
+        (case char ((#\. #\- #\_ #\@) #t) (else #f))))
+  (let loop ((n (string-length string)))
+    (if (or (<= n 1) (not (version-char? (string-ref string (- n 1)))))
+        (substring string 0 n)
+        (loop (- n 1)))))
+
+(define (remove-known-suffix string)
+  (let ((suffix (find (lambda (suffix) (string-suffix? suffix string))
+                      '("-bin"
+                        "-dev"
+                        "-devel"
+                        "-doc"
+                        "-git"
+                        "-libs"
+                        "-non-dfsg"))))
+    (if (not suffix) string
+        (substring string 0 (- (string-length string)
+                               (string-length suffix))))))
+
 (define (project-name-stem name)
-  (and name
-       (let ((name (sys-basename name)))
-         name)))
+  (remove-version (remove-known-suffix name)))
 
 (define data (with-input-from-file "repology-data.scm" read))
 
@@ -25,8 +45,9 @@
                 (cons project
                       (for-each (lambda (x)
                                   (let ((repo (assoc? "repo" x))
-                                        (name (project-name-stem
-                                               (assoc? "visiblename" x))))
+                                        (name (assoc? "visiblename" x)))
+                                    (when name
+                                      (set! name (sys-basename name)))
                                     (hash-table-update!/default
                                      project-repo-names
                                      project
@@ -97,7 +118,9 @@
                                               ""))
                                     (class (cond ((string=? name "")
                                                   "missing")
-                                                 ((string=? name project)
+                                                 ((string=?
+                                                   (project-name-stem project)
+                                                   (project-name-stem name))
                                                   "canonical")
                                                  (else
                                                   "noncanonical"))))
