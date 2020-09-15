@@ -37,16 +37,29 @@
   (list-sort string-ci<?
              (hash-table-keys project-repo-names)))
 
+(define repo-counts
+  (hash-table-fold project-repo-names
+                   (lambda (project repo-names repo-counts)
+                     (let ((project-repos (hash-table-keys repo-names)))
+                       (for-each (lambda (repo)
+                                   (hash-table-update!/default
+                                    repo-counts
+                                    repo
+                                    (lambda (count) (+ count 1))
+                                    0))
+                                 project-repos)
+                       repo-counts))
+                   (make-hash-table equal?)))
+
 (define repos
-  (list-delete-neighbor-dups
-   string=?
-   (list-sort
-    string-ci<?
-    (hash-table-fold project-repo-names
-                     (lambda (project repo-names repos)
-                       (let ((project-repos (hash-table-keys repo-names)))
-                         (append repos project-repos)))
-                     '()))))
+  (list-sort
+   (lambda (a b)
+     (let ((a-count (hash-table-ref repo-counts a))
+           (b-count (hash-table-ref repo-counts b)))
+       (if (= a-count b-count)
+           (string-ci<? a b)
+           (> a-count b-count))))
+   (hash-table-keys repo-counts)))
 
 (define (project-repo-name project repo)
   (let ((names (hash-table-ref project-repo-names project)))
