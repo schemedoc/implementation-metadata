@@ -3,6 +3,7 @@
 (long-title "The RScheme Project")
 
 (wikipedia "RScheme")
+(repology "rscheme")
 
 (person "Donovan Kolbly")
 

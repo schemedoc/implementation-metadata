@@ -3,6 +3,7 @@
 
 (homepage-url "https://racket-lang.org/")
 (wikipedia-url "https://en.wikipedia.org/wiki/Racket_%28programming_language%29")
+(repology "racket")
 
 (mailing-list
  (name "Google group")

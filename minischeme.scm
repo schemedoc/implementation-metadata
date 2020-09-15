@@ -5,3 +5,5 @@
 (person "Akira Kida")
 (person "Nils M Holm")
 (person "Jacques Bailhache")
+
+(repology "minischeme")

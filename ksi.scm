@@ -4,5 +4,6 @@
 (long-title "The KSi Scheme interpreter")
 
 (sourceforge "ksi")
+(repology "ksi")
 
 (homepage-url sourceforge)

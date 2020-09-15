@@ -3,6 +3,7 @@
 
 (homepage-url "https://scsh.net/")
 (wikipedia-url "https://en.wikipedia.org/wiki/Scsh")
+(repology "scsh")
 
 (person "Olin Shivers")
 (person "Brian Carlstrom")

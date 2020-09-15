@@ -3,6 +3,7 @@
 
 (homepage-url "https://github.com/leftmike/foment")
 (issue-tracker-url "https://github.com/leftmike/foment/issues")
+(repology "foment")
 
 (person "Mike Montague")
 

@@ -7,6 +7,7 @@
 (wikipedia-url "https://en.wikipedia.org/wiki/Ikarus_%28Scheme_implementation%29")
 (issue-tracker-url "https://bugs.launchpad.net/ikarus")
 (community-forum-url "https://answers.launchpad.net/ikarus")
+(repology "ikarus")
 
 (person "Abdulaziz Ghuloum")
 

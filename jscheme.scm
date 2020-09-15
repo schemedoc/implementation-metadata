@@ -3,6 +3,7 @@
 
 (homepage-url "https://norvig.com/jscheme.html")
 (sourceforge "jscheme")
+(repology "jscheme")
 
 (person "Peter Norvig")
 (author "Kenneth R Anderson")

@@ -6,6 +6,8 @@
 (person "William Campbell")
 (organization "University of Massachusetts at Boston")
 
+(repology "umb-scheme")
+
 (features
  debugger
  editor

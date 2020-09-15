@@ -4,6 +4,7 @@
 
 (homepage-url "http://mosh.monaos.org/")
 (github "higepon/mosh")
+(repology "mosh-scheme")
 
 (features
  r6rs)

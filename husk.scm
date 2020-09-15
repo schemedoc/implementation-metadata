@@ -5,5 +5,6 @@
 (sourceforge "husk-scheme")
 (github "justinethier/husk-scheme")
 (hackage "husk-scheme")
+(repology "haskell:husk-scheme")
 
 (person "Justin Ethier")
