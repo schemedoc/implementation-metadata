@@ -2,6 +2,7 @@
 (tagline "R4RS interpreter with Tk GUI and CLOS-like object system")
 
 (homepage-url "http://kaolin.unice.fr/STk/")
+(repology "stk-scheme")
 
 (person "Erick Gallesio")
 (organization "Université Nice-Sophia-Antipolis")
