@@ -21,6 +21,8 @@
                       (for-each (lambda (x)
                                   (let ((repo (assoc? "repo" x))
                                         (name (assoc? "visiblename" x)))
+                                    (when name
+                                      (set! name (sys-basename name)))
                                     (hash-table-update!/default
                                      project-repo-names
                                      project
