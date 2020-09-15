@@ -1,5 +1,4 @@
-(id "chez")
-(short-title "Chez")
+(id "chezscheme")
 (title "Chez Scheme")
 
 (homepage-url "https://www.scheme.com/")
@@ -24,24 +23,8 @@
  (name "Google group")
  (archive-url "https://groups.google.com/group/chez-scheme"))
 
-(package
- (manager freebsd-ports)
- (directory "lang")
- (name "chez-scheme"))
-
-(package
- (manager freebsd-ports)
- (directory "lang")
- (name "petite-chez"))
-
-(package
- (manager homebrew)
- (name "chezscheme"))
-
-(package
- (manager pkgsrc)
- (directory "wip")
- (name "chezscheme"))
+(repology "chez-scheme")
+(repology "petite-chez-scheme")
 
 (version-control
  (web-url "https://github.com/cisco/ChezScheme")
