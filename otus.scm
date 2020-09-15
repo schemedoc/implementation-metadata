@@ -1,4 +1,3 @@
-(id "otus")
 (short-title "Otus")
 (title "Otus Lisp")
 (tagline "almost purely functional dialect of Lisp")

@@ -1,4 +1,3 @@
-(id "gambit")
 (short-title "Gambit")
 (title "Gambit Scheme")
 

@@ -1,4 +1,3 @@
-(id "wraith")
 (short-title "Wraith")
 (title "Wraith Scheme")
 (based-on pixie)

@@ -1,4 +1,3 @@
-(id "pocket")
 (short-title "Pocket")
 (title "Pocket Scheme")
 (tagline "R4RS Scheme for Windows CE-based Pocket PCs, smartphones and handheld PCs")

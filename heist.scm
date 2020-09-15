@@ -1,4 +1,3 @@
-(id "heist")
 (title "Heist")
 (tagline "Scheme in as little Ruby and as much Scheme as possible")
 

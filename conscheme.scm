@@ -1,4 +1,3 @@
-(id "conscheme")
 (title "Conscheme")
 
 (implementation-languages go scheme)

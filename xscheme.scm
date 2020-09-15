@@ -1,4 +1,3 @@
-(id "xscheme")
 (title "XScheme")
 (tagline "object-oriented Scheme from the author of XLisp")
 

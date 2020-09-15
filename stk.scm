@@ -1,4 +1,3 @@
-(id "stk")
 (title "STk")
 (tagline "R4RS interpreter with Tk GUI and CLOS-like object system")
 

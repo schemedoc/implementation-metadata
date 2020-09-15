@@ -1,4 +1,3 @@
-(id "skij")
 (title "Skij")
 (long-title "Scheme in Java")
 (tagline "Scheme in Java for interactive debugging and scripting")

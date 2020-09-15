@@ -1,4 +1,3 @@
-(id "scheme84")
 (title "Scheme84")
 (tagline "Scheme for Franz Lisp on a VAX under VMS or BSD")
 

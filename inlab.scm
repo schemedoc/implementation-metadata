@@ -1,4 +1,3 @@
-(id "inlab")
 (short-title "Inlab")
 (title "Inlab Scheme")
 (tagline "complete R4RS implementation for image processing")

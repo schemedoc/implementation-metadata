@@ -1,4 +1,3 @@
-(id "jaja")
 (title "Jaja")
 (tagline "Scheme in Java")
 

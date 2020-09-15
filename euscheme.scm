@@ -1,4 +1,3 @@
-(id "euscheme")
 (title "Euscheme")
 (tagline "an implementation of EuLisp level 0 (mostly)")
 (based-on "xscheme")

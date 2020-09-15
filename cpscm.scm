@@ -1,4 +1,3 @@
-(id "cpscm")
 (short-title "CPSCM")
 (title "CPSCM Scheme")
 (tagline "JavaScript and Common Lisp compiler based on CPS conversion")

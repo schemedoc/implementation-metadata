@@ -1,4 +1,3 @@
-(id "scheme48")
 (title "Scheme 48")
 
 (homepage-url "http://www.s48.org/")

@@ -1,4 +1,3 @@
-(id "owl")
 (short-title "Owl")
 (title "Owl Lisp")
 (tagline "a functional Scheme for world domination")

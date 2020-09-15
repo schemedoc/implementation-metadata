@@ -1,4 +1,3 @@
-(id "picrin")
 (title "Picrin")
 
 (github "picrin-scheme/picrin")

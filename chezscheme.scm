@@ -1,4 +1,3 @@
-(id "chezscheme")
 (title "Chez Scheme")
 
 (homepage-url "https://www.scheme.com/")

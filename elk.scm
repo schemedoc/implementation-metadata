@@ -1,4 +1,3 @@
-(id "elk")
 (short-title "Elk")
 (title "Elk Scheme")
 (long-title "Extension Language Kit")

@@ -1,4 +1,3 @@
-(id "lispme")
 (title "LispMe")
 (tagline "Scheme interpreter for Palm OS PDAs")
 

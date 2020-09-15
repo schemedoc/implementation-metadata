@@ -1,4 +1,3 @@
-(id "ypsilon")
 (title "Ypsilon")
 (long-title "Ypsilon Scheme System")
 

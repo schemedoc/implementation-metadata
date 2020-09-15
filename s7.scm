@@ -1,4 +1,3 @@
-(id "s7")
 (title "s7")
 (tagline "extension language for Snd, Radium, and Common Music")
 (based-on "tinyscheme")

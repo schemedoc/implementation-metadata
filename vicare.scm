@@ -1,4 +1,3 @@
-(id "vicare")
 (short-title "Vicare")
 (title "Vicare Scheme")
 (based-on "ikarus")

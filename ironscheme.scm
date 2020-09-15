@@ -1,4 +1,3 @@
-(id "ironscheme")
 (title "IronScheme")
 
 (homepage-url "https://github.com/leppie/IronScheme")

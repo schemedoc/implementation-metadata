@@ -1,5 +1,3 @@
-(id "oaklisp")
-
 (wikipedia "Oaklisp")
 
 (homepage-url "http://oaklisp.alioth.debian.org/")

@@ -1,4 +1,3 @@
-(id "jazz")
 (title "JazzScheme")
 (tagline "")
 

@@ -1,4 +1,3 @@
-(id "chicken")
 (short-title "Chicken")
 (title "CHICKEN Scheme")
 (tagline "Scheme-to-C compiler with lots of libraries and friendly community")

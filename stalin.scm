@@ -1,4 +1,3 @@
-(id "stalin")
 (title "Stalin")
 (tagline "Scheme-to-C compiler with extreme whole-program optimization")
 

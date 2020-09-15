@@ -1,4 +1,3 @@
-(id "viivi")
 (title "Viivi")
 (tagline "complete R5RS interpreter for the JVM")
 

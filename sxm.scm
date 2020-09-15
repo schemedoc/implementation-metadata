@@ -1,4 +1,3 @@
-(id "sxm")
 (title "SXM")
 (alternative-title "CXEMA")
 (tagline "complete R5RS and IEEE Scheme based on XScheme")

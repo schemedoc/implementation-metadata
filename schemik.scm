@@ -1,4 +1,3 @@
-(id "schemik")
 (title "Schemik")
 
 (sourceforge "schemik")

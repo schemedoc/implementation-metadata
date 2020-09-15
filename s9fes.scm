@@ -1,4 +1,3 @@
-(id "s9fes")
 (short-title "S9fES")
 (title "Scheme 9")
 (long-title "Scheme 9 from Empty Space")

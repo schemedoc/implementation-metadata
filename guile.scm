@@ -1,4 +1,3 @@
-(scheme-id "guile")
 (short-title "Guile")
 (title "GNU Guile")
 

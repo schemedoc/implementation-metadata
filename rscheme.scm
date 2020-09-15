@@ -1,4 +1,3 @@
-(id "rscheme")
 (title "RScheme")
 (long-title "The RScheme Project")
 

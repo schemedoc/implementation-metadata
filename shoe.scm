@@ -1,4 +1,3 @@
-(id "shoe")
 (title "Shoe")
 (tagline "a Scheme driver")
 
