@@ -23,9 +23,7 @@
  (network "irc.freenode.net")
  (webchat "https://webchat.freenode.net/?channels=%23gerbil-scheme"))
 
-(package
- (manager homebrew)
- (name "gerbil-scheme"))
+(repology "gerbil-scheme")
 
 (version-control
  (web-url "https://github.com/vyzo/gerbil")

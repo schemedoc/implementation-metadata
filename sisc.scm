@@ -6,6 +6,7 @@
 
 (homepage-url "http://sisc-scheme.org/")
 (sourceforge "sisc")
+(repology "sisc")
 (wikipedia "SISC")
 
 (documentation
@@ -23,8 +24,3 @@
  modules
  r5rs
  user-defined-first-class-types)
-
-(package
- (manager freebsd-ports)
- (directory "lang")
- (name "sisc"))

@@ -15,19 +15,7 @@
  (name "Google group")
  (archive-url "https://groups.google.com/group/chibi-scheme"))
 
-(package
- (manager freebsd-ports)
- (directory "lang")
- (name "chibi-scheme"))
-
-(package
- (manager homebrew)
- (name "chibi-scheme"))
-
-(package
- (manager pkgsrc)
- (directory "wip")
- (name "chibi-scheme"))
+(repology "chibi-scheme")
 
 (version-control
  (web-url "https://github.com/ashinn/chibi-scheme")

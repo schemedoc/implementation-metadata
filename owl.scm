@@ -9,10 +9,7 @@
 
 (person "Aki Helin")
 
-(package
- (manager freebsd-ports)
- (directory "lang")
- (name "owl-lisp"))
+(repology "owl-lisp")
 
 (features
  compile-to-c

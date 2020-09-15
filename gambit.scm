@@ -27,9 +27,7 @@
  (archive-url "https://mailman.iro.umontreal.ca/pipermail/gambit-list/")
  (instructions-url "https://mailman.iro.umontreal.ca/mailman/listinfo/gambit-list"))
 
-(package
- (manager homebrew)
- (name "gambit-scheme"))
+(repology "gambit-c")
 
 (version-control
  (web-url "https://github.com/gambit/gambit")

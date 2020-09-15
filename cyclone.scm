@@ -15,9 +15,7 @@
  (title "API Documentation")
  (web-url "https://justinethier.github.io/cyclone/docs/API"))
 
-(package
- (manager arch-linux-aur)
- (name "cyclone-scheme"))
+(repology "cyclone-scheme")
 
 (version-control
  (web-url "https://github.com/justinethier/cyclone")

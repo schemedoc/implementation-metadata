@@ -14,18 +14,7 @@
 (social-media-profile "https://twitter.com/tk_riple")
 (blog-url "https://compassoftime.blogspot.com/")
 
-(package
- (manager arch-linux-aur)
- (name "sagittarius"))
-
-(package
- (manager freebsd-ports)
- (directory "lang")
- (name "sagittarius-scheme"))
-
-(package
- (manager homebrew)
- (name "sagittarius-scheme"))
+(repology "sagittarius-scheme")
 
 (version-control
  (web-url "https://bitbucket.org/ktakashi/sagittarius-scheme/src")
