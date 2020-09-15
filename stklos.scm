@@ -6,6 +6,7 @@
 
 (homepage-url "https://www.stklos.net/")
 (github "egallesio/STklos")
+(repology "stklos")
 (issue-tracker github)
 
 (person "Erick Gallesio")

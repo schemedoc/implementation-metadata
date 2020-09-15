@@ -4,6 +4,8 @@
 (homepage-url "http://larcenists.org/")
 (wikipedia-url "https://en.wikipedia.org/wiki/Larceny_%28Scheme_implementation%29")
 (issue-tracker-url "https://github.com/larcenists/larceny/issues")
+(repology "larceny")
+(repology "petit-larceny")
 
 (person "William D Clinger")
 

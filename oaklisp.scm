@@ -3,6 +3,7 @@
 (wikipedia "Oaklisp")
 
 (homepage-url "http://oaklisp.alioth.debian.org/")
+(repology "oaklisp")
 
 (person "Kevin J. Lang")
 (person "Barak A. Pearlmutter")

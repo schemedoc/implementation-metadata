@@ -4,6 +4,7 @@
 (long-title "Extension Language Kit")
 
 (homepage-url "http://sam.zoy.org/elk/")
+(repology "elk-scheme")
 
 (person "Sam Hocevar")
 

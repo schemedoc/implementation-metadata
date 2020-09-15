@@ -4,6 +4,7 @@
 (long-title "Scheme 9 from Empty Space")
 
 (homepage-url "https://www.t3x.org/s9fes/")
+(repology "scheme9")
 
 (person "Nils M Holm")
 

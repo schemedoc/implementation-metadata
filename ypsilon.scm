@@ -4,6 +4,7 @@
 (homepage-url "http://www.littlewingpinball.com/doc/en/ypsilon/index.html")
 (wikipedia-url "https://en.wikipedia.org/wiki/Ypsilon_%28Scheme_implementation%29")
 (issue-tracker-url "https://code.google.com/archive/p/ypsilon/issues")
+(repology "ypsilon")
 
 (person "Yoshikatsu Fujita")
 (organization "LittleWing Co. Ltd.")

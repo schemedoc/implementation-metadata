@@ -3,5 +3,6 @@
 (long-title "The SCM Implementation of Scheme")
 
 (homepage-url "http://people.csail.mit.edu/jaffer/SCM")
+(repology "scm")
 
 (person "Aubrey Jaffer")

@@ -6,6 +6,7 @@
 (homepage-url "http://marcomaggi.github.io/vicare.html")
 (github "marcomaggi/vicare")
 (bitbucket "marcomaggi/vicare-scheme")
+(repology "vicare-scheme")
 
 (person "Marco Maggi")
 

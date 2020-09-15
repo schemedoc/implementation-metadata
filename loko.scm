@@ -4,6 +4,7 @@
 
 (homepage-url "https://scheme.fail/")
 (gitlab "weinholt/loko")
+(repology "loko-scheme")
 (issue-tracker gitlab)
 
 (person "Göran Weinholt")
