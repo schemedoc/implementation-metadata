@@ -6,6 +6,10 @@
 (issue-tracker-url "https://github.com/cisco/ChezScheme/issues")
 
 (person "R. Kent Dybvig")
+(person "Oscar Waddell")
+(person "Bob Burger")
+(person "Andy Keep")
+(person "Matthew Flatt")
 (organization "Cadence Research Systems")
 (organization "Indiana University")
 
