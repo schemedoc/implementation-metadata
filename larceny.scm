@@ -8,6 +8,7 @@
 (repology "petit-larceny")
 
 (person "William D Clinger")
+(person "Lars T Hansen")
 
 (documentation
  (title "User's Manual")

@@ -1,8 +1,10 @@
-(id "scm")
+(scheme-id "scm")
 (title "SCM")
 (long-title "The SCM Implementation of Scheme")
 
-(homepage-url "http://people.csail.mit.edu/jaffer/SCM")
+(based-on "siod")
+
+(homepage-url "https://people.csail.mit.edu/jaffer/SCM")
 (repology "scm")
 
 (person "Aubrey Jaffer")

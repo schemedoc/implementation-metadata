@@ -1,6 +1,8 @@
-(id "guile")
+(scheme-id "guile")
 (short-title "Guile")
 (title "GNU Guile")
+
+(based-on "scm")
 
 (homepage-url "https://www.gnu.org/software/guile/")
 (wikipedia-url "https://en.wikipedia.org/wiki/GNU_Guile")

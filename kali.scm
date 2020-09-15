@@ -3,6 +3,8 @@
 (title "Kali Scheme")
 (tagline "distributed Scheme with efficient transmission of higher-order objects such as closures and continuations")
 
+(based-on "scheme48")
+
 (homepage-url "http://www.neci.nj.nec.com/PLS/Kali.html")
 
 (person "Richard Kelsey")
