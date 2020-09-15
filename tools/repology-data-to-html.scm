@@ -27,13 +27,17 @@
                         "-doc"
                         "-git"
                         "-libs"
-                        "-non-dfsg"))))
+                        "-non-dfsg"
+                        "-svn"
+                        "-textual"
+                        "-unstable"
+                        "-x11"))))
     (if (not suffix) string
         (substring string 0 (- (string-length string)
                                (string-length suffix))))))
 
 (define (project-name-stem name)
-  (remove-version (remove-known-suffix name)))
+  (remove-known-suffix (remove-version (remove-known-suffix name))))
 
 (define data (with-input-from-file "repology-data.scm" read))
 
