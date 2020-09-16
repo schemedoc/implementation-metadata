@@ -1,4 +1,3 @@
-(id "biwa")
 (short-title "Biwa")
 (title "BiwaScheme")
 

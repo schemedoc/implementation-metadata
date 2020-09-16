@@ -1,4 +1,3 @@
-(id "bit")
 (title "BIT")
 
 (person "Danny Dubé")
