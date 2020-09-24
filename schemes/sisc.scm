@@ -1,7 +1,7 @@
 (title "SISC")
 (long-title "Second Interpreter of Scheme Code")
 (tagline "fast, complete R5RS interpreter for the JVM")
-(based-on lisc)
+(based-on "lisc")
 
 (homepage-url "http://sisc-scheme.org/")
 (sourceforge "sisc")

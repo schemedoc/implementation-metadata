@@ -4,7 +4,7 @@
 (homepage-url "http://www.schluessel.jp/")
 (web-url "https://osdn.net/projects/schluessel/")
 
-(person "Yuichiro Moriguchi")
+(person "Yuichiro Moriguchi")  ; y-moriguchi
 
 (features
  jvm

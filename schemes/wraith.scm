@@ -1,6 +1,6 @@
 (short-title "Wraith")
 (title "Wraith Scheme")
-(based-on pixie)
+(based-on "pixie")
 
 (homepage-url "http://jayreynoldsfreeman.com/My/Software.html")
 

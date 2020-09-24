@@ -2,6 +2,7 @@
 (tagline "")
 
 (based-on "gambit")
+(person "Guillaume Cartier")
 
 (homepage-url "http://www.jazzscheme.org/")
 

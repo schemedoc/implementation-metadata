@@ -1,7 +1,7 @@
 (short-title "Otus")
 (title "Otus Lisp")
 (tagline "almost purely functional dialect of Lisp")
-(based-on owl)
+(based-on "owl")
 
 (github "otus-lisp/otus")
 (repology "ol")

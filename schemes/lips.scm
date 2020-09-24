@@ -1,4 +1,5 @@
-(short "LIPS")
+(short-title "LIPS")
+(title "LIPS")
 (long-title "LIPS is Pretty Simple")
 (tagline "Scheme LISP in JavaScript")
 

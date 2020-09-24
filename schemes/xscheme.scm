@@ -1,5 +1,7 @@
 (title "XScheme")
-(tagline "object-oriented Scheme from the author of XLisp")
+(tagline "object-oriented Scheme")
+(alternative-title "XLisp")
+(alternative-title "eXperimental LISP")
 
 (person "David Betz")
 

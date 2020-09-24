@@ -1,5 +1,5 @@
 (title "SILK")
-(based-on jscheme)
+(based-on "jscheme")
 
 (author "Peter Norvig")
 (author "Kenneth R Anderson")

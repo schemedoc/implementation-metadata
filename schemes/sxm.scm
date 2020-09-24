@@ -2,6 +2,7 @@
 (alternative-title "CXEMA")
 (tagline "complete R5RS and IEEE Scheme based on XScheme")
 (based-on "xscheme")
+(standards r5rs ieee-1178-1990)
 
 (homepage-url "https://malgil.com/sxm/")
 
