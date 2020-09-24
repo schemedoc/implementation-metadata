@@ -46,6 +46,8 @@
  (web-url "https://savannah.gnu.org/git/?group=guile")
  (git-url "https://git.savannah.gnu.org/git/guile.git"))
 
+(url "https://ftp.gnu.org/gnu/guile/guile-{version}.{format}")
+
 (release
  (date "2018-07-02")
  (version-number "2.2.4")

@@ -17,10 +17,7 @@
 
 (repology "chibi-scheme")
 
-(version-control
- (web-url "https://github.com/ashinn/chibi-scheme")
- (git-url "https://github.com/ashinn/chibi-scheme.git")
- (git-url "git@github.com:ashinn/chibi-scheme.git"))
+(version-control github)
 
 (release
  (date "2018-01-25")

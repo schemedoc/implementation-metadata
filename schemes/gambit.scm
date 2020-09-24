@@ -27,7 +27,6 @@
  (instructions-url "https://mailman.iro.umontreal.ca/mailman/listinfo/gambit-list"))
 
 (repology "gambit-c")
-
 (github "gambit/gambit")
 (version-control github)
 

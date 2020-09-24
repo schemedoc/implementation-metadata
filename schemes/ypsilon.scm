@@ -9,6 +9,8 @@
 (person "Yoshikatsu Fujita")
 (organization "LittleWing Co. Ltd.")
 
+(github "fujita-y/ypsilon")
+
 (documentation
  (title "Assorted documents on Google Code")
  (web-url "https://code.google.com/archive/p/ypsilon/wikis"))

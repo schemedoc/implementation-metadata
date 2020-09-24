@@ -5,6 +5,9 @@
 
 (usenet "comp.lang.lisp.x")
 
+(website-url "http://www.edm2.com/index.php/The_XLISP_family")
+(website-url "http://www.edm2.com/index.php/XLISP-STAT")
+
 (features
  object-system)
 

@@ -24,14 +24,11 @@
 
 (repology "gerbil-scheme")
 
-(version-control
- (web-url "https://github.com/vyzo/gerbil")
- (git-url "https://github.com/vyzo/gerbil.git")
- (git-url "git@github.com:vyzo/gerbil.git"))
+(version-control github)
 
 (release
  (date "2019-02-09")
  (version-number "0.15.1")
  (source-archive
-  (url "https://github.com/vyzo/gerbil/archive/v0.15.1.tar.gz")
+  (github-archive "v0.15.1" ".tar.gz")
   (hash sha256 "3d29eecdaa845b073bf8413cd54e420b3f48c79c25e43fab5a379dde029d0cde")))

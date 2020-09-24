@@ -6,7 +6,5 @@
 (person "Per Odlund")
 (organization "Chalmers University")
 
-(version-control
- (web-url "https://github.com/weinholt/conscheme")
- (git-url "https://github.com/weinholt/conscheme.git")
- (git-url "git@github.com:weinholt/conscheme.git"))
+(github "weinholt/conscheme")
+(version-control github)
