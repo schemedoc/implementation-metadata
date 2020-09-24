@@ -3,7 +3,7 @@
 
 (homepage-url "http://gambitscheme.org/")
 (wikipedia-url "https://en.wikipedia.org/wiki/Gambit_%28scheme_implementation%29")
-(issue-tracker-url "https://github.com/gambit/gambit/issues")
+(issue-tracker github)
 
 (person "Marc Feeley")
 (organization "Universite de Montreal")
@@ -28,10 +28,8 @@
 
 (repology "gambit-c")
 
-(version-control
- (web-url "https://github.com/gambit/gambit")
- (git-url "https://github.com/gambit/gambit.git")
- (git-url "git@github.com:gambit/gambit.git"))
+(github "gambit/gambit")
+(version-control github)
 
 (release
  (date "2019-02-05")

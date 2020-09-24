@@ -1,8 +1,9 @@
 (title "Chez Scheme")
 
-(homepage-url "https://www.scheme.com/")
-(homepage-url "https://cisco.github.io/ChezScheme/")
-(wikipedia-url "https://en.wikipedia.org/wiki/Chez_Scheme")
+(github "cisco/ChezScheme")
+(homepage "https://www.scheme.com/")
+(homepage "https://cisco.github.io/ChezScheme/")
+(wikipedia "Chez_Scheme")
 (issue-tracker-url "https://github.com/cisco/ChezScheme/issues")
 
 (person "R. Kent Dybvig")

@@ -1,9 +1,9 @@
 (short-title "Gerbil")
 (title "Gerbil Scheme")
 
+(github "vyzo/gerbil")
 (homepage-url "https://cons.io/")
-(homepage-url "https://github.com/vyzo/gerbil")
-(issue-tracker-url "https://github.com/vyzo/gerbil/issues")
+(issue-tracker github)
 
 (documentation
  (title "Guide")

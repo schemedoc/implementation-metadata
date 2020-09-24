@@ -19,10 +19,8 @@
 
 (repology "gauche")
 
-(version-control
- (web-url "https://github.com/shirok/Gauche")
- (git-url "https://github.com/shirok/Gauche.git")
- (git-url "git@github.com:shirok/Gauche.git"))
+(github "shirok/Gauche")
+(version-control github)
 
 (features
  interpreter

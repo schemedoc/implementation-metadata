@@ -2,7 +2,8 @@
 (title "Chibi-Scheme")
 
 (homepage-url "http://synthcode.com/wiki/chibi-scheme")
-(issue-tracker-url "https://github.com/ashinn/chibi-scheme/issues")
+(github "ashinn/chibi-scheme")
+(issue-tracker github)
 
 (person "Alex Shinn")
 

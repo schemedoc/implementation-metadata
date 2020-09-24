@@ -2,7 +2,8 @@
 (title "BiwaScheme")
 
 (homepage-url "https://www.biwascheme.org/")
-(issue-tracker-url "https://github.com/biwascheme/biwascheme/issues")
+(github "biwascheme/biwascheme")
+(issue-tracker github)
 
 (documentation
  (title "Reference")

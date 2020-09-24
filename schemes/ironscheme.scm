@@ -1,9 +1,10 @@
 (title "IronScheme")
 
-(homepage-url "https://github.com/leppie/IronScheme")
-(homepage-url "https://archive.codeplex.com/?p=ironscheme")
-(wikipedia-url "https://en.wikipedia.org/wiki/IronScheme")
-(issue-tracker-url "https://github.com/leppie/IronScheme/issues")
+(github "leppie/IronScheme")
+(wikipedia "IronScheme")
+(issue-tracker github)
+
+(old-homepage-url "https://archive.codeplex.com/?p=ironscheme")
 
 (person "Llewellyn Pritchard")
 

@@ -1,8 +1,10 @@
 (title "Foment")
 
-(homepage-url "https://github.com/leftmike/foment")
-(issue-tracker-url "https://github.com/leftmike/foment/issues")
 (repology "foment")
+(github "leftmike/foment")
+(homepage github)
+(issue-tracker github)
+(version-control github)
 
 (person "Mike Montague")
 

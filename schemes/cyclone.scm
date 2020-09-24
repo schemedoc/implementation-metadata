@@ -1,8 +1,9 @@
 (short-title "Cyclone")
 (title "Cyclone Scheme")
 
+(github "justinethier/cyclone")
 (homepage-url "https://justinethier.github.io/cyclone/")
-(issue-tracker-url "https://github.com/justinethier/cyclone/issues")
+(issue-tracker github)
 
 (person "Justin Ethier")
 
