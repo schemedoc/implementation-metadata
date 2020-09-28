@@ -5,7 +5,7 @@
 (repology "stk-scheme")
 
 (person "Erick Gallesio")
-(organization "Université Nice-Sophia-Antipolis")
+(academy "Université Nice-Sophia-Antipolis")
 
 (documentation
  (title "Reference Manual (4.0.0)")

@@ -9,7 +9,7 @@
 (issue-tracker github)
 
 (person "Erick Gallesio")
-(organization "Université Nice-Sophia-Antipolis")
+(academy "Université Nice-Sophia-Antipolis")
 
 (pseudorelease
  (features

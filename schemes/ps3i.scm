@@ -6,7 +6,7 @@
 (homepage-url "https://pages.lip6.fr/Christian.Queinnec/VideoC/ps3i.html")
 
 (person "Christian Queinnec")
-(organization "Université Paris 6")
+(academy "Université Paris 6")
 
 (features
  jvm

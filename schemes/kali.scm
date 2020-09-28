@@ -8,7 +8,7 @@
 
 (person "Richard Kelsey")
 (person "Jonathan Rees")
-(organization "NEC Research Institute")
+(company "NEC Research Institute")
 
 (paper
  (type article)

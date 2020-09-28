@@ -2,7 +2,7 @@
 (tagline "graphical Scheme debugger based on STk")
 (based-on "stk")
 
-(university "University of California, Berkeley")
+(academy "University of California, Berkeley")
 
 (release
  (version "0.2")

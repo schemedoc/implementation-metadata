@@ -11,8 +11,8 @@
 (person "Bob Burger")
 (person "Andy Keep")
 (person "Matthew Flatt")
-(organization "Cadence Research Systems")
-(organization "Indiana University")
+(company "Cadence Research Systems")
+(academy "Indiana University")
 
 (documentation
  (title "User's Guide")

@@ -7,7 +7,7 @@
 (repology "ypsilon")
 
 (person "Yoshikatsu Fujita")
-(organization "LittleWing Co. Ltd.")
+(company "LittleWing Co. Ltd.")
 
 (github "fujita-y/ypsilon")
 

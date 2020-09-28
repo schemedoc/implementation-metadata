@@ -4,7 +4,7 @@
 
 (person "Florian Loitsch")
 (person "Manuel Serrano")
-(organization "Inria Sophia Antipolis")
+(academy "Inria Sophia Antipolis")
 
 (homepage-url "http://www-sop.inria.fr/indes/scheme2js/")
 (repology "scheme2js")

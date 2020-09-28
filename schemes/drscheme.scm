@@ -1,4 +1,4 @@
 (title "DrScheme")
 (based-on "plt")
 
-(organization "PLT")
+(group "PLT")

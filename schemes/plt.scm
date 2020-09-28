@@ -1,7 +1,7 @@
 (title "PLT Scheme")
 (based-on "mzscheme")
 
-(organization "PLT")
+(group "PLT")
 (person "Matthias Felleisen")
 (person "Matthew Flatt")
 

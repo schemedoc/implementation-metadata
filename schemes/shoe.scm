@@ -2,4 +2,4 @@
 (tagline "a Scheme driver")
 
 (person "Fredrik Noring")
-(organization "NoCrew")
+(group "NoCrew")

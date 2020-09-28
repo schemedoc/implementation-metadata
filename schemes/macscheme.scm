@@ -4,4 +4,4 @@
 (person "John Ulrich")
 (person "Liz Heller")
 (person "Eric Ost")
-(organization "Lightship Software")
+(company "Lightship Software")

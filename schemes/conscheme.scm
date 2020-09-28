@@ -4,7 +4,7 @@
 
 (person "Göran Weinholt")
 (person "Per Odlund")
-(organization "Chalmers University")
+(academy "Chalmers University")
 
 (github "weinholt/conscheme")
 (version-control github)

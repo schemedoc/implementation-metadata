@@ -4,7 +4,7 @@
 (homepage-url "http://home.j00.itscom.net/ilma/english/viivi/")
 
 (person "Ilma")
-(organization "Shibuya.lisp")
+(group "Shibuya.lisp")
 
 (features
  case-sensitive-symbols

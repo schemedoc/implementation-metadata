@@ -10,7 +10,7 @@
 (homepage-url "http://gambitscheme.org/")
 
 (person "Marc Feeley")
-(organization "Universite de Montreal")
+(academy "Universite de Montreal")
 
 (documentation
  (title "Manual")

@@ -4,7 +4,7 @@
 
 (homepage-url "https://inst.eecs.berkeley.edu/~scheme/")
 
-(organization "University of California, Berkeley")
+(academy "University of California, Berkeley")
 
 (documentation
  (title "FAQ")

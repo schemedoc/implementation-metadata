@@ -2,7 +2,7 @@
 
 (person "Danny Dubé")
 (person "Marc Feeley")
-(organization "Universite de Montreal")
+(academy "Universite de Montreal")
 
 (paper
  (type phdthesis)

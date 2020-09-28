@@ -3,8 +3,8 @@
 (tagline "an embeddable mostly-R4RS interpreter with lots of extensions")
 
 (person "Anselm Baird-Smith")
-(organization "Groupe Bull")
-(organization "INRIA")
+(company "Groupe Bull")
+(academy "INRIA")
 
 (features
  apropos)

@@ -3,7 +3,7 @@
 (tagline "Scheme in Java for interactive debugging and scripting")
 
 (person "Michael Travers")
-(organization "IBM Watson Labs")
+(company "IBM Watson Labs")
 
 (homepage-url "https://alumni.media.mit.edu/~mt/skij/")
 

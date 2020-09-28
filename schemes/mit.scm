@@ -16,7 +16,7 @@
 (person "Brian A. LaMacchia")
 (person "Mark Friedman")
 (person "Henry M. Wu")
-(organization "Massachusetts Institute of Technology")
+(academy "Massachusetts Institute of Technology")
 
 (documentation
  (title "User's Manual")

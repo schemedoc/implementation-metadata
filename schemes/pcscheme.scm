@@ -4,9 +4,9 @@
 (alternative-title "Ibuki PC-SCHEME")
 (alternative-title "PCS/Geneva")
 
-(organization "Texas Instruments")
-(organization "Ibuki")
-(organization "University of Geneva, Switzerland")
+(company "Texas Instruments")
+(company "Ibuki")
+(academy "University of Geneva, Switzerland")
 
 (person "Richard W. Weyhrauch")
 (person "Larry Bartholdi")

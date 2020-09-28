@@ -5,8 +5,8 @@
 
 (person "Petr Krajca")
 (person "Vilem Vychodil")
-(organization "SUNY Binghamton")
-(organization "Palacký University, Olomouc")
+(academy "SUNY Binghamton")
+(academy "Palacký University, Olomouc")
 
 (paper
  (type inproceedings)

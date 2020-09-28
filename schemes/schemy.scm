@@ -1,5 +1,5 @@
 (title "Schemy")
 (tagline "lightweight interpreter for embedding in .NET applications")
 
-(organization "Microsoft")
+(company "Microsoft")
 (github "microsoft/schemy")

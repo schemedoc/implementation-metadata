@@ -5,7 +5,7 @@
 (homepage-url "https://carlstrom.com/bdc-scheme/")
 
 (person "Brian D. Carlstrom")
-(organization "Massachusetts Institute of Technology")
+(academy "Massachusetts Institute of Technology")
 
 (features
  jvm)

@@ -1,4 +1,4 @@
 (title "MzScheme")
 
-(organization "PLT")
+(group "PLT")
 (person "Matthew Flatt")

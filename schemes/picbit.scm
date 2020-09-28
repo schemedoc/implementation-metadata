@@ -2,8 +2,8 @@
 
 (person "Marc Feeley")
 (person "Danny Dubé")
-(organization "Université de Montréal")
-(organization "Université Laval")
+(academy "Université de Montréal")
+(academy "Université Laval")
 
 (paper
  (type inproceedings)

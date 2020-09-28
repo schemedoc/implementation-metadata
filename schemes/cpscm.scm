@@ -6,7 +6,7 @@
 (google-code "cpscm")
 
 (person "Dan Muresan")
-(organization "Omnigia")
+(company "Omnigia")
 
 (features
  compile-to-common-lisp

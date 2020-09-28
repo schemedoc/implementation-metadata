@@ -6,4 +6,4 @@
 
 (person "Matthias Blume")
 (person "David Rush")
-(organization "Princeton University")
+(academy "Princeton University")

@@ -3,6 +3,6 @@
 (tagline "complete R4RS implementation for image processing")
 
 (person "Thomas Obermair")
-(organization "Inlab Networks")
+(company "Inlab Networks")
 
 (homepage "https://www.inlab.net/inlab-scheme/")

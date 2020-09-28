@@ -7,4 +7,4 @@
 (person "Russell Bradford")
 (person "Dave DeRoure")
 (person "Stewart Brodie")
-(organization "University of Bath")
+(academy "University of Bath")

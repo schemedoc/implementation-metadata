@@ -2,7 +2,7 @@
 
 (person "Marc Feeley")
 (person "Vincent St-Amour")
-(organization "Université de Montréal")
+(academy "Université de Montréal")
 
 (paper
  (type inproceedings)

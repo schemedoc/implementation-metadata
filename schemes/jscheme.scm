@@ -7,8 +7,8 @@
 (person "Peter Norvig")
 (author "Kenneth R Anderson")
 (author "Timothy J Hickey")
-(organization "Brandeis University")
-(organization "BBN Technologies")
+(academy "Brandeis University")
+(company "BBN Technologies")
 
 (features
  jvm

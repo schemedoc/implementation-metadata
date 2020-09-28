@@ -3,7 +3,7 @@
 (person "Jonathan Rees")
 (person "Olin Shivers")
 (person "Dan Weld")
-(organization "Yale University")
+(academy "Yale University")
 
 (machine
  vax

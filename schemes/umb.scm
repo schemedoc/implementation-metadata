@@ -3,7 +3,7 @@
 (tagline "R4RS Scheme system with editor and debugger")
 
 (person "William Campbell")
-(organization "University of Massachusetts at Boston")
+(academy "University of Massachusetts at Boston")
 
 (repology "umb-scheme")
 
