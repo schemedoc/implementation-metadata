@@ -2,7 +2,7 @@
 
 (repology "bigloo")
 (github "manuel-serrano/bigloo")
-(wikipedia (en "Bigloo"))
+(wikipedia en "Bigloo")
 (homepage (url "https://www-sop.inria.fr/mimosa/fp/Bigloo/"))
 (issue-tracker github)
 (version-control github)

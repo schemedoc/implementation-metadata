@@ -2,9 +2,12 @@
 (title "Gambit Scheme")
 (alternative-title "Gambit-C")
 
-(homepage-url "http://gambitscheme.org/")
-(wikipedia-url "https://en.wikipedia.org/wiki/Gambit_%28scheme_implementation%29")
+(repology "gambit-c")
+(github "gambit/gambit")
+(version-control github)
 (issue-tracker github)
+(wikipedia en "Gambit (scheme implementation)")
+(homepage-url "http://gambitscheme.org/")
 
 (person "Marc Feeley")
 (organization "Universite de Montreal")
@@ -27,9 +30,6 @@
  (archive-url "https://mailman.iro.umontreal.ca/pipermail/gambit-list/")
  (instructions-url "https://mailman.iro.umontreal.ca/mailman/listinfo/gambit-list"))
 
-(repology "gambit-c")
-(github "gambit/gambit")
-(version-control github)
 
 (release
  (date "2019-02-05")

@@ -1,8 +1,7 @@
 (title "Gauche")
 
 (homepage-url "https://practical-scheme.net/gauche/")
-(wikipedia-url "https://en.wikipedia.org/wiki/Gauche_%28Scheme_implementation%29")
-(issue-tracker-url "https://sourceforge.net/p/gauche/bugs/")
+(wikipedia en "Gauche (Scheme implementation)")
 
 (person "Shiro Kawai")
 
@@ -12,14 +11,12 @@
  (pdf-url "https://practical-scheme.net/vault/Gauche-0.9.7-refe.pdf"))
 
 (mailing-list
- (name "devel")
- (list-address "gauche-devel" "lists.sourceforge.net")
- (archive-url "https://sourceforge.net/p/gauche/mailman/gauche-devel/")
- (instructions-url "https://sourceforge.net/projects/gauche/lists/gauche-devel"))
+ (name "gauche-devel")
+ (list-address sourceforce))
 
 (repology "gauche")
-
 (github "shirok/Gauche")
+(sourceforge "gauche")
 (version-control github)
 
 (features

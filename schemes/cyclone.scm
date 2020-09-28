@@ -1,9 +1,11 @@
 (short-title "Cyclone")
 (title "Cyclone Scheme")
 
+(repology "cyclone-scheme")
 (github "justinethier/cyclone")
 (homepage-url "https://justinethier.github.io/cyclone/")
 (issue-tracker github)
+(version-control github)
 
 (person "Justin Ethier")
 
@@ -14,13 +16,6 @@
  (document
   (title "API Documentation")
   (web-url "https://justinethier.github.io/cyclone/docs/API")))
-
-(repology "cyclone-scheme")
-
-(version-control
- (web-url "https://github.com/justinethier/cyclone")
- (git-url "https://github.com/justinethier/cyclone.git")
- (git-url "git@github.com:justinethier/cyclone.git"))
 
 (features
  c-ffi

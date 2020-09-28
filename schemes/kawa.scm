@@ -2,7 +2,7 @@
 (title "Kawa Scheme")
 
 (homepage-url "https://www.gnu.org/software/kawa/")
-(wikipedia-url "https://en.wikipedia.org/wiki/Kawa_%28Scheme_implementation%29")
+(wikipedia en "Kawa (Scheme implementation)")
 (issue-tracker-url "https://gitlab.com/kashell/Kawa/issues")
 (issue-tracker-url "https://savannah.gnu.org/bugs/?group=kawa")
 

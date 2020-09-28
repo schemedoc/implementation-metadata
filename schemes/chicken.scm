@@ -2,9 +2,8 @@
 (title "CHICKEN Scheme")
 (tagline "Scheme-to-C compiler with lots of libraries and friendly community")
 
-(homepage-url "https://www.call-cc.org/")
-(wikipedia-url "https://en.wikipedia.org/wiki/Chicken_%28Scheme_implementation%29")
-(issue-tracker-url "https://bugs.call-cc.org/")
+(homepage (url "https://www.call-cc.org/"))
+(issue-tracker (url "https://bugs.call-cc.org/"))
 
 (documentation
  (title "Manual (version 4)")
@@ -14,30 +13,12 @@
  (title "Manual (version 5)")
  (web-url "https://wiki.call-cc.org/man/5/The%20User%27s%20Manual"))
 
-(irc-channel
- (channel "#chicken")
- (network "irc.freenode.net")
- (webchat "https://webchat.freenode.net/?channels=%23chicken"))
-
-(mailing-list
- (name "users")
- (list-address "chicken-users" "nongnu.org")
- (archive-url "https://lists.nongnu.org/archive/html/chicken-users/")
- (instructions-url "https://lists.nongnu.org/mailman/listinfo/chicken-users"))
-
-(mailing-list
- (name "hackers")
- (list-address "chicken-hackers" "nongnu.org")
- (archive-url "https://lists.nongnu.org/archive/html/chicken-hackers/")
- (instructions-url "https://lists.nongnu.org/mailman/listinfo/chicken-hackers"))
-
-(mailing-list
- (name "janitors")
- (list-address "chicken-janitors" "nongnu.org")
- (archive-url "https://lists.nongnu.org/archive/html/chicken-janitors/")
- (instructions-url "https://lists.nongnu.org/mailman/listinfo/chicken-janitors"))
-
 (repology "chicken")
+(wikipedia en "Chicken (Scheme implementation)")
+(irc-channel (freenode "#chicken"))
+(mailing-list (nongnu "chicken-users"))
+(mailing-list (nongnu "chicken-hackers"))
+(mailing-list (nongnu "chicken-janitors"))
 
 (version-control
  (web-url "https://code.call-cc.org/cgi-bin/gitweb.cgi?p=chicken-core.git")

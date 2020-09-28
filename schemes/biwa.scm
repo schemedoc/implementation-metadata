@@ -17,7 +17,4 @@
  (manager npm)
  (name "https://www.npmjs.com/package/biwascheme"))
 
-(version-control
- (web-url "https://github.com/biwascheme/biwascheme")
- (git-url "https://github.com/biwascheme/biwascheme.git")
- (git-url "git@github.com:biwascheme/biwascheme.git"))
+(version-control github)

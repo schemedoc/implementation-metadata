@@ -1,10 +1,12 @@
 (title "Larceny")
 
-(homepage-url "http://larcenists.org/")
-(wikipedia-url "https://en.wikipedia.org/wiki/Larceny_%28Scheme_implementation%29")
-(issue-tracker-url "https://github.com/larcenists/larceny/issues")
+(github "larcenists/larceny")
+(issue-tracker github)
+(version-control github)
 (repology "larceny")
 (repology "petit-larceny")
+(homepage-url "http://larcenists.org/")
+(wikipedia en "Larceny (Scheme implementation)")
 
 (person "William D Clinger")
 (person "Lars T Hansen")
@@ -18,11 +20,6 @@
  (list-address "larceny-users" "lists.ccs.neu.edu")
  (archive-url "https://lists.ccs.neu.edu/pipermail/larceny-users/")
  (instructions-url "https://lists.ccs.neu.edu/bin/listinfo/larceny-users"))
-
-(version-control
- (web-url "https://github.com/larcenists/larceny")
- (git-url "https://github.com/larcenists/larceny.git")
- (git-url "git@github.com:larcenists/larceny.git"))
 
 (release
  (date "2017-08-06")

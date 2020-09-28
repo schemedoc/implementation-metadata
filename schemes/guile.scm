@@ -4,7 +4,7 @@
 (based-on "scm")
 
 (homepage-url "https://www.gnu.org/software/guile/")
-(wikipedia-url "https://en.wikipedia.org/wiki/GNU_Guile")
+(wikipedia en "GNU Guile")
 (issue-tracker-url "https://debbugs.gnu.org/cgi/pkgreport.cgi?pkg=guile")
 (repology "guile")
 

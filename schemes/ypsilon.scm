@@ -2,7 +2,7 @@
 (long-title "Ypsilon Scheme System")
 
 (homepage-url "http://www.littlewingpinball.com/doc/en/ypsilon/index.html")
-(wikipedia-url "https://en.wikipedia.org/wiki/Ypsilon_%28Scheme_implementation%29")
+(wikipedia en "Ypsilon (Scheme implementation)")
 (issue-tracker-url "https://code.google.com/archive/p/ypsilon/issues")
 (repology "ypsilon")
 
