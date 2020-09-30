@@ -2,7 +2,9 @@
 (title "KSi Scheme")
 (long-title "The KSi Scheme interpreter")
 
-(sourceforge "ksi")
 (repology "ksi")
+(sourceforge "ksi")
+(homepage sourceforge)
 
-(homepage-url sourceforge)
+(person "Ivan Demakov")
+(country "RU")
