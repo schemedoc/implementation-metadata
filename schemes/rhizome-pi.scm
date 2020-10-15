@@ -5,3 +5,5 @@
 (homepage-url "http://www.kt.rim.or.jp/~qfwfq/")
 (homepage-url "http://www.kt.rim.or.jp/~qfwfq/packages/")
 (repology "rhizome-pi-scheme")
+
+(country "JP")
