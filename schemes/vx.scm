@@ -1,4 +1,6 @@
 (title "Vx-Scheme")
+(tagline "small, fast R4RS Scheme integrating with the VxWorks RTOS")
+(rnrs 4)
 (person "Colin Smith")
 (written-in "C++")
 (web (archive-url "20120723013430" "http://www.colin-smith.net/vx-scheme/"))
