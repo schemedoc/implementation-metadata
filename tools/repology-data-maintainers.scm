@@ -1,9 +1,13 @@
 #! /usr/bin/env gosh
 
-(import (scheme base) (scheme char) (scheme file)
-        (scheme read) (scheme write))
-(import (srfi 1) (srfi 132))
-(import (srfi 69))
+(import (scheme base)
+        (scheme char)
+        (scheme file)
+        (scheme read)
+        (scheme write)
+        (srfi 1)
+        (srfi 69)
+        (srfi 132))
 
 (define (disp . xs) (for-each display xs) (newline))
 
