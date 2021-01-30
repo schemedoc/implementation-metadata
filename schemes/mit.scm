@@ -51,3 +51,8 @@
  (version-number "10.1.11")
  (source-archive
   (url "https://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11.tar.gz")))
+
+(features
+ 32-bit
+ 64-bit
+ native-code-compiler)
