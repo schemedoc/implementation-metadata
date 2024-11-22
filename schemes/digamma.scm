@@ -2,6 +2,8 @@
 (tagline "R7RS/R6RS Scheme implementation derived from Ypsilon")
 (based-on "ypsilon")
 
-(github "fujita-y/digamma")
-
 (person "Yoshikatsu Fujita")
+
+(version-control
+  (web-url "https://github.com/lojikil/digamma")
+  (git-url "https://github.com/lojikil/digamma.git"))

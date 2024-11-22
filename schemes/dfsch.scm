@@ -3,4 +3,6 @@
 
 (person "Aleš Hakl")
 
-(github "adh/dfsch")
+(version-control
+  (web-url "https://github.com/adh/dfsch")
+  (git-url "https://github.com/adh/dfsch.git"))

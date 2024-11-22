@@ -1,12 +1,15 @@
 (title "Larceny")
 
 (github "larcenists/larceny")
-(issue-tracker github)
-(version-control github)
 (repology "larceny")
 (repology "petit-larceny")
 (homepage-url "http://larcenists.org/")
 (wikipedia en "Larceny (Scheme implementation)")
+
+(issue-tracker-url "https://github.com/larcenists/larceny/issues")
+(version-control
+  (web-url "https://github.com/larcenists/larceny")
+  (git-url "https://github.com/larcenists/larceny.git"))
 
 (person "William D Clinger")
 (person "Lars T Hansen")

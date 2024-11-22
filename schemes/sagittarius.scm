@@ -17,7 +17,7 @@
 
 (version-control
  (web-url "https://bitbucket.org/ktakashi/sagittarius-scheme/src")
- (mercurial-url "ssh://hg@bitbucket.org/ktakashi/sagittarius-scheme"))
+ (git-url "https://bitbucket.org/ktakashi/sagittarius-scheme.git"))
 
 (release
  (date (2019 6 5))

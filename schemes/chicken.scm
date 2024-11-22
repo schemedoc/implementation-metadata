@@ -22,8 +22,7 @@
 
 (version-control
  (web-url "https://code.call-cc.org/cgi-bin/gitweb.cgi?p=chicken-core.git")
- (git-url "https://code.call-cc.org/git/chicken-core.git")
- (git-url "git://code.call-cc.org/chicken-core"))
+ (git-url "https://code.call-cc.org/git/chicken-core.git"))
 
 (features
  c-ffi

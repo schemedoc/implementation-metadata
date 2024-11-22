@@ -4,8 +4,10 @@
 (repology "cyclone-scheme")
 (github "justinethier/cyclone")
 (homepage-url "https://justinethier.github.io/cyclone/")
-(issue-tracker github)
-(version-control github)
+(issue-tracker-url "https://github.com/justinethier/cyclone/issues")
+(version-control
+  (web-url "https://github.com/justinethier/cyclone")
+  (git-url "https://github.com/justinethier/cyclone-bootstrap.git"))
 
 (person "Justin Ethier")
 

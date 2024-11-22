@@ -4,9 +4,11 @@
 (based-on "stk")
 
 (homepage-url "https://www.stklos.net/")
-(github "egallesio/STklos")
 (repology "stklos")
 (issue-tracker github)
+(version-control
+  (web-url "https://github.com/egallesio/STklos")
+  (git-url "https://github.com/egallesio/STklos.git"))
 
 (person "Erick Gallesio")
 (academy "Université Nice-Sophia-Antipolis")

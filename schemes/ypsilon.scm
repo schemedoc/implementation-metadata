@@ -16,7 +16,8 @@
  (web-url "https://code.google.com/archive/p/ypsilon/wikis"))
 
 (version-control
- (web-url "https://code.google.com/archive/p/ypsilon/source/default/source"))
+ (web-url "https://github.com/fujita-y/ypsilon")
+ (git-url "https://github.com/fujita-y/ypsilon.git"))
 
 (release
  (date (2008 12 23))

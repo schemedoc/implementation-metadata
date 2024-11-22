@@ -6,3 +6,7 @@
 
 (homepage-url "http://practical-scheme.net/vault/escm.html")
 (repology "escm")
+
+(version-control
+  (web-url "https://github.com/shirok/escm")
+  (git-url "https://github.com/shirok/escm.git"))

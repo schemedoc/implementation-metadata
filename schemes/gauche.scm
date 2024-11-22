@@ -15,9 +15,10 @@
  (list-address sourceforce))
 
 (repology "gauche")
-(github "shirok/Gauche")
 (sourceforge "gauche")
-(version-control github)
+(version-control
+  (web-url "https://github.com/shirok/Gauche")
+  (git-url "https://github.com/shirok/Gauche.git"))
 
 (features
  interpreter

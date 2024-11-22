@@ -3,9 +3,11 @@
 (based-on "ikarus")
 
 (homepage-url "http://marcomaggi.github.io/vicare.html")
-(github "marcomaggi/vicare")
-(bitbucket "marcomaggi/vicare-scheme")
 (repology "vicare-scheme")
+(issue-tracker-url "https://github.com/marcomaggi/vicare/issues")
+(version-control
+  (web-url "https://github.com/marcomaggi/vicare")
+  (git-url "https://github.com/marcomaggi/vicare.git"))
 
 (person "Marco Maggi")
 
