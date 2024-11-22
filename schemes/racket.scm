@@ -26,3 +26,10 @@
 (mailing-list
  (name "Google group")
  (archive-url "https://groups.google.com/group/racket-users"))
+
+(release
+ (date (2024 11 1))
+ (version-number "8.15")
+ (source-archive
+  (url "https://download.racket-lang.org/releases/8.15/installers/racket-8.15-src.tgz")
+  (hash sha256 "602b848459daf1b2222a46a9094e85ae2d28e480067219957fa46af8400e1233")))

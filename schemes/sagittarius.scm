@@ -26,6 +26,13 @@
   (url "https://bitbucket.org/ktakashi/sagittarius-scheme/downloads/sagittarius-0.9.6.tar.gz")
   (hash sha256 "b946b168fca70f84d922bcfa2125e2e64ad5fb8cf67e4204deb43dd2dcdedb0e")))
 
+(release
+ (date (2024 9 9))
+ (version-number "0.9.12")
+ (source-archive
+  (url "https://bitbucket.org/ktakashi/sagittarius-scheme/downloads/sagittarius-0.9.12.tar.gz")
+  (hash sha256 "c3a690902effbca3bc7b1bc3a6c4ac2f22d7ae6e0548a87c5d818982c784208d")))
+
 ;; https://github.com/ktakashi/sagittarius-scheme -- GitHub mirror of Bitbucket hg
 ;; https://github.com/ktakashi/pegasus -- Package repository for Sagittarius Scheme
 ;; https://code.google.com/archive/p/sagittarius-scheme/ -- old Google Code page

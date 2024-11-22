@@ -25,8 +25,8 @@
  (instructions-url "https://lists.ccs.neu.edu/bin/listinfo/larceny-users"))
 
 (release
- (date "2017-08-06")
+ (date (2017 08 06))
  (version-number "1.3")
  (source-archive
   (url "http://larcenists.org/LarcenyReleases/larceny-1.3-src.tar.gz")
-  (url "http://larcenists.org/LarcenyReleases/larceny-1.3-src.zip")))
+  (hash sha256 "8cf3df64b652d38ebca3602e5e823000d1f4fa222179abe41aaeb1fa0e24bc33")))

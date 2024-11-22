@@ -2,3 +2,4 @@ tools/familytree.dot
 tools/familytree.png
 tools/repology-data.html
 tools/repology-data.scm
+*.swp

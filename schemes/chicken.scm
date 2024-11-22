@@ -41,3 +41,10 @@
  (source-archive
   (url "https://code.call-cc.org/releases/5.0.0/chicken-5.0.0.tar.gz")
   (hash sha256 "a8b94bb94c5d6a4348cedd75dc334ac80924bcd9a7a7a3d6af5121e57ef66595")))
+
+(release
+ (date (2024 7 16))
+ (version-number "5.4.0")
+ (source-archive
+  (url "https://code.call-cc.org/releases/5.4.0/chicken-5.4.0.tar.gz")
+  (hash sha256 "3c5d4aa61c1167bf6d9bf9eaf891da7630ba9f5f3c15bf09515a7039bfcdec5f")))

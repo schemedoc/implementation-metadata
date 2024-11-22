@@ -33,9 +33,16 @@
 
 
 (release
- (date "2019-02-05")
+ (date (2019 02 05))
  (version-number "4.9.3")
  (source-archive
   (url "https://www-labs.iro.umontreal.ca/~gambit/download/gambit/v4.9/source/gambit-v4_9_3.tgz"))
  (source-archive
   (url "https://www-labs.iro.umontreal.ca/~gambit/download/gambit/v4.9/source/gambit-v4_9_3-devel.tgz")))
+
+(release
+ (date (2023 4 1))
+ (version-number "4.9.5")
+ (source-archive
+  (url "https://gambitscheme.org/latest/gambit-v4_9_5.tgz")
+  (hash sha256 "e28ef8db5f0e7b1159720c150053dcab8f7c4cae1f0e5c838944797073f8c1dc")))

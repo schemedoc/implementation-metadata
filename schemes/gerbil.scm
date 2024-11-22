@@ -29,8 +29,15 @@
   (git-url "https://github.com/mighty-gerbils/gerbil.git")
 
 (release
- (date "2019-02-09")
+ (date (2019 02 09))
  (version-number "0.15.1")
  (source-archive
   (github-archive "v0.15.1" ".tar.gz")
   (hash sha256 "3d29eecdaa845b073bf8413cd54e420b3f48c79c25e43fab5a379dde029d0cde")))
+
+(release
+ (date (2023 12 6))
+ (version-number "0.18.1")
+ (source-archive
+  (url "https://github.com/mighty-gerbils/gerbil/releases/download/v0.18.1/gerbil-v0.18.1.tar.gz")
+  (hash sha256 "e1827bb88bdb74a01a99f0d94a50a6469ae4e760905be83dd3064ffc1709ceb5")))

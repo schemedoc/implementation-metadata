@@ -244,3 +244,10 @@
  (source-archive
   (url "ftp://ftp-sop.inria.fr/indes/fp/Bigloo/{scheme-id}-{version}.{format}")
   (archive-prefix "{scheme-id}-{version}")))
+
+(release
+ (date (2023 12 1))
+ (version-number "4.5h")
+ (source-archive
+  (url "https://www-sop.inria.fr/mimosa/fp/Bigloo/download/bigloo-4.5b.tar.gz")
+  (hash sha256 "202b0f02479e11995e273572911f032042b81f6dd413faba0ffdbe9392997284")))

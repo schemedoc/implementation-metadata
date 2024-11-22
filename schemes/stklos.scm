@@ -162,5 +162,12 @@
  (build-step make (exec "make")))
 
 (release
+ (date (2024 10 10))
+ (version-number "2.10")
+ (source-archive
+   (url "https://stklos.net/download/stklos-2.10.tar.gz")
+   (hash sha256 "6dbf0345f92048fec6133ad6e55d71d0be3b776d58174b087ed08f7c4b2ea041")))
+
+(release
  (version "1.50")
  (date "2020-08-17"))
