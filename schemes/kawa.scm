@@ -26,8 +26,7 @@
 
 (version-control
  (web-url "https://gitlab.com/kashell/Kawa")
- (git-url "https://gitlab.com/kashell/Kawa.git")
- (git-url "git@gitlab.com:kashell/Kawa.git"))
+ (git-url "https://gitlab.com/kashell/Kawa.git"))
 
 (release
  (date "2017-10-02")

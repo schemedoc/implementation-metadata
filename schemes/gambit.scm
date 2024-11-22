@@ -3,9 +3,10 @@
 (alternative-title "Gambit-C")
 
 (repology "gambit-c")
-(github "gambit/gambit")
-(version-control github)
 (issue-tracker github)
+(version-control
+  (web-url "https://github.com/gambit/gambit")
+  (git-url "https://github.com/gambit/gambit.git"))
 (wikipedia en "Gambit (scheme implementation)")
 (homepage-url "http://gambitscheme.org/")
 

@@ -7,6 +7,10 @@
 
 (person "Sam Hocevar")
 
+(version-control
+  (web-url "https://github.com/gorauskas/elk-scheme")
+  (git-url "https://github.com/gorauskas/elk-scheme.git"))
+
 (release
  (version "3.99.8")
  (source

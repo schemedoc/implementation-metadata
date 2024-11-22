@@ -5,5 +5,7 @@
 
 (homepage-url "https://people.csail.mit.edu/jaffer/SCM")
 (repology "scm")
+(version-control
+  (web-url "https://cvs.savannah.gnu.org/viewvc/scm/scm/"))
 
 (person "Aubrey Jaffer")

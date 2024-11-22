@@ -19,6 +19,10 @@
 (wikipedia en "Racket (programming language)")
 (repology "racket")
 
+(version-control
+ (web-url "https://github.com/racket/racket")
+ (git-url "https://github.com/racket/racket.git"))
+
 (mailing-list
  (name "Google group")
  (archive-url "https://groups.google.com/group/racket-users"))

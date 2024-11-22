@@ -2,9 +2,10 @@
 
 (implementation-languages go scheme)
 
-(person "Göran Weinholt")
+(person "Gwen Weinholt")
 (person "Per Odlund")
 (academy "Chalmers University")
 
-(github "weinholt/conscheme")
-(version-control github)
+(version-control
+  (web-url "https://github.com/tiancaiamao/conscheme")
+  (git-url "https://github.com/tiancaiamao/conscheme.git"))

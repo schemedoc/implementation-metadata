@@ -1,9 +1,10 @@
-(short-title "Biwa")
 (title "BiwaScheme")
 
 (homepage-url "https://www.biwascheme.org/")
-(github "biwascheme/biwascheme")
-(issue-tracker github)
+(issue-tracker-url "https://github.com/biwascheme/biwascheme/issues")
+(version-control
+  (web-url "https://github.com/biwascheme/biwascheme")
+  (git-url "https://github.com/biwascheme/biwascheme.git"))
 
 (documentation
  (title "Reference")
@@ -16,5 +17,3 @@
 (package
  (manager npm)
  (name "https://www.npmjs.com/package/biwascheme"))
-
-(version-control github)

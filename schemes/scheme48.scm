@@ -19,10 +19,6 @@
  (web-url "http://www.s48.org/cgi-bin/hgwebdir.cgi/s48")
  (mercurial-url "http://www.s48.org/cgi-bin/hgwebdir.cgi/s48"))
 
-(version-control
- (web-url "http://www.s48.org/cgi-bin/hgwebdir.cgi/s48-stable")
- (mercurial-url "http://www.s48.org/cgi-bin/hgwebdir.cgi/s48-stable"))
-
 (release
  (date "2014-04-12")
  (version-number "1.9.2")

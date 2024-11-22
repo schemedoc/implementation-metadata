@@ -1,12 +1,15 @@
 (title "IronScheme")
 
-(github "leppie/IronScheme")
+(person "Llewellyn Pritchard")
+
 (wikipedia "IronScheme")
-(issue-tracker github)
 
 (old-homepage-url "https://archive.codeplex.com/?p=ironscheme")
 
-(person "Llewellyn Pritchard")
+(issue-tracker-url "https://github.com/IronScheme/IronScheme/issues")
+(version-control
+ (web-url "https://github.com/leppie/IronScheme")
+ (git-url "https://github.com/leppie/IronScheme.git"))
 
 (irc-channel
  (channel "#IronScheme")

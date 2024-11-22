@@ -4,4 +4,6 @@
 
 (person "Rick Button")
 
-(github "rickbutton/loki")
+(version-control
+  (web-url "https://github.com/rickbutton/loki")
+  (git-url "https://github.com/rickbutton/loki.git"))

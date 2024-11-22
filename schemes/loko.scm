@@ -2,11 +2,14 @@
 (title "Loko Scheme")
 
 (homepage-url "https://scheme.fail/")
-(gitlab "weinholt/loko")
 (repology "loko-scheme")
-(issue-tracker gitlab)
+(issue-tracker-url "https://gitlab.com/weinholt/loko/-/issues")
 
-(person "Göran Weinholt")
+(person "Gwen Weinholt")
+
+(version-control
+  (web-url "https://gitlab.com/weinholt/loko")
+  (git-url "https://gitlab.com/weinholt/loko.git"))
 
 (release
  (date "2019-07-29")

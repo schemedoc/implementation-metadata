@@ -32,8 +32,7 @@
 
 (version-control
  (web-url "https://github.com/cisco/ChezScheme")
- (git-url "https://github.com/cisco/ChezScheme.git")
- (git-url "git@github.com:cisco/ChezScheme.git"))
+ (git-url "https://github.com/cisco/ChezScheme.git"))
 
 (release
  (date "2019-03-22")

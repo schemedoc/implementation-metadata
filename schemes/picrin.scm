@@ -1,9 +1,7 @@
 (title "Picrin")
 
-(github "picrin-scheme/picrin")
 (repology "picrin")
-(version-control github)
-
-
-(pseudo-release
- (source-checkout
+(issue-tracker-url "https://github.com/picrin-scheme/picrin/issues")
+(version-control
+  (web-url "https://github.com/picrin-scheme/picrin")
+  (git-url "https://github.com/picrin-scheme/picrin.git"))

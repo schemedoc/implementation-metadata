@@ -3,9 +3,11 @@
 (repology "bigloo")
 (github "manuel-serrano/bigloo")
 (wikipedia en "Bigloo")
-(homepage (url "https://www-sop.inria.fr/mimosa/fp/Bigloo/"))
-(issue-tracker github)
-(version-control github)
+(homepage-url "https://www-sop.inria.fr/mimosa/fp/Bigloo/")
+(issue-tracker-url "https://github.com/manuel-serrano/bigloo/issues")
+(version-control
+  (web-url "https://github.com/manuel-serrano/bigloo")
+  (git-url "https://github.com/manuel-serrano/bigloo.git"))
 (community-wiki (url "http://bigloo.pbworks.com/w/"))
 
 (person "Manuel Serrano")
