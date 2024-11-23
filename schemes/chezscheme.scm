@@ -42,6 +42,13 @@
   (hash sha256 "3a370fdf2ffd67d6a0ccbb993dfab1cbaf4a0a97983c869cfaab40528c33c48b")))
 
 (release
+ (date (2023 10 16))
+ (version-number "9.6.4")
+ (source-archive
+  (url "https://github.com/cisco/ChezScheme/releases/download/v9.6.4/csv9.6.4.tar.gz")
+  (hash sha256 "f5827682fa259c47975ffe078785fb561e4a5c54f764331ef66c32132843685d")))
+
+(release
  (date (2024 11 14))
  (version-number "10.1.0")
  (source-archive
