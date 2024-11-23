@@ -27,3 +27,10 @@
  (bundled-srfi-implementations
   1 6 8 9 13 14 19 26 27
   28 38 39 41 42 48 98))
+
+(release
+ (date (2022 4 16))
+ (version-number "2.0.8")
+ (source-archive
+  (url "https://github.com/fujita-y/ypsilon/archive/refs/tags/v2.0.8.tar.gz")
+  (hash sha256 "355c95d5e4ba6f549f3efde4773d8e9e21b4154bde19a21b4ef7a57006501288")))

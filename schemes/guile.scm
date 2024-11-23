@@ -101,3 +101,10 @@
  (library (name (srfi :88)))
  (library (name (srfi :98)))
  (library (name (srfi :111))))
+
+(release
+ (date (2024 6 23))
+ (version-number "3.0.10")
+ (source-archive
+  (url "https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.gz")
+  (hash sha256 "2dbdbc97598b2faf31013564efb48e4fed44131d28e996c26abe8a5b23b56c2a")))
