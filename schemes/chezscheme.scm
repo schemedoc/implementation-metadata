@@ -38,9 +38,8 @@
  (date (2019 03 22))
  (version-number "9.5.2")
  (source-archive
-  (url "https://github.com/cisco/ChezScheme/archive/v9.5.2.zip"))
- (source-archive
-  (url "https://github.com/cisco/ChezScheme/archive/v9.5.2.tar.gz")))
+  (url "https://github.com/cisco/ChezScheme/archive/v9.5.2.tar.gz")
+  (hash sha256 "3a370fdf2ffd67d6a0ccbb993dfab1cbaf4a0a97983c869cfaab40528c33c48b")))
 
 (release
  (date (2024 11 14))
