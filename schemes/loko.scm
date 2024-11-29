@@ -12,7 +12,7 @@
   (git-url "https://gitlab.com/weinholt/loko.git"))
 
 (release
- (date (2019 07 29)))
+ (date (2019 07 29))
  (archive "https://scheme.fail/releases/loko-0.1.0.tar.gz"))
 
 (release
@@ -46,6 +46,6 @@
 (release
  (date (2023 9 26))
  (version-number "0.12.1")
- (archive
+ (source-archive
   (url "https://scheme.fail/releases/loko-0.12.1.tar.gz")
-  (hash sha256 "404b4cf89002130355a4ac9e39ae6fb07cfca05759fc9b5081f9f62943cfba7b"))
+  (hash sha256 "404b4cf89002130355a4ac9e39ae6fb07cfca05759fc9b5081f9f62943cfba7b")))
