@@ -29,7 +29,7 @@
  (git-url "https://gitlab.com/kashell/Kawa.git"))
 
 (release
- (date (2017 10 02)
+ (date (2017 10 02))
  (version-number "3.0")
  (source-archive
   (url "https://ftp.gnu.org/pub/gnu/kawa/kawa-3.0.tar.gz")
