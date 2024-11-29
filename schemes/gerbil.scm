@@ -26,7 +26,7 @@
 
 (version-control
   (web-url "https://github.com/mighty-gerbils/gerbil")
-  (git-url "https://github.com/mighty-gerbils/gerbil.git")
+  (git-url "https://github.com/mighty-gerbils/gerbil.git"))
 
 (release
  (date (2019 02 09))
